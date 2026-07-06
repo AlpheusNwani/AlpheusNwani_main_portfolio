@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alpheus Nwani Portfolio</title>
+
+  <!-- Tailwind CSS (CLI output) -->
+  <link rel="stylesheet" href="./css/output.css">
+
+  <!-- Font Awesome Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+<!-- ================= NAVBAR ================= -->
+<nav class="fixed top-0 left-0 w-full bg-[#0b1f3a] text-white shadow-md z-50">
+
+  <div class="flex justify-between items-center h-16 px-6 md:px-12">
+
+    <!-- LOGO -->
+    <div class="font-bold text-lg bg-white text-[#0b1f3a] px-3 py-1 rounded-md">
+      ALPHEUS NWANI
+    </div>
+
+    <!-- DESKTOP NAV -->
+    <ul class="hidden md:flex space-x-6 text-sm font-medium">
+      <li><a href="#home" class="hover:text-blue-300">Home</a></li>
+      <li><a href="#about" class="hover:text-blue-300">About</a></li>
+      <li><a href="#skills" class="hover:text-blue-300">Skills</a></li>
+      <li><a href="#projects" class="hover:text-blue-300">Projects</a></li>
+      <li><a href="#contact" class="hover:text-blue-300">Contact</a></li>
+    </ul>
+
+    <!-- MOBILE MENU BUTTON -->
+    <button id="menu-btn" class="md:hidden text-2xl">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+  </div>
+
+  <!-- MOBILE NAV -->
+  <div id="mobile-menu" class="hidden md:hidden bg-[#0b1f3a] px-6 pb-4">
+    <a href="#home" class="mobile-link">Home</a>
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#skills" class="mobile-link">Skills</a>
+    <a href="#projects" class="mobile-link">Projects</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+  </div>
+
+</nav>
+
+<main>
+
+  <!-- ================= HERO SECTION ================= -->
+<section id="home" class="pt-28 md:pt-32 px-6 md:px-12 flex flex-col md:flex-row items-center justify-between gap-10">
+
+  <!-- LEFT CONTENT -->
+  <div class="flex-1">
+
+    <h1 class="text-4xl md:text-5xl font-bold text-[#0b1f3a] leading-tight">
+      Hi, I'm <span class="text-blue-700">Alpheus Nwani</span>
+    </h1>
+
+    <p class="mt-3 text-lg text-gray-600 font-medium">
+      Frontend Developer | AI Enthusiast | Prompt Engineer
+    </p>
+
+    <p class="mt-5 text-gray-500 max-w-xl leading-relaxed">
+      I am a beginner developer passionate about building modern responsive websites,
+      learning web technologies, and exploring AI-powered development tools to improve my skills.
+    </p>
+
+    <!-- BUTTONS -->
+    <div class="mt-6 flex flex-col sm:flex-row gap-4">
+
+      <a href="#projects"
+         class="bg-[#0b1f3a] text-white px-6 py-3 rounded-lg hover:bg-blue-900 transition duration-300 text-center">
+        View Projects
+      </a>
+
+      <a href="./assets/Alpheus_Nwani_ATS_Resume (2).pdf"
+         class="border border-[#0b1f3a] text-[#0b1f3a] px-6 py-3 rounded-lg hover:bg-[#0b1f3a] hover:text-white transition duration-300 text-center">
+        Download Resume
+      </a>
+
+    </div>
+
+  </div>
+
+  <!-- RIGHT IMAGE -->
+  <div class="flex-1 flex justify-center">
+
+    <img src="./assets/images/AlpheusNwani.jpg"
+         alt="Alpheus Nwani"
+         class="w-72 h-72 md:w-80 md:h-80 object-cover rounded-full shadow-lg border-4 border-[#0b1f3a]">
+
+  </div>
+
+</section>
+
+<!-- ================= ABOUT SECTION ================= -->
+<section
+  id="about"
+  class="py-20 px-6 md:px-12 bg-white"
+>
+  <div class="max-w-7xl mx-auto">
+
+    <!-- SECTION TITLE -->
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold text-[#0b1f3a]">
+        About Me
+      </h2>
+
+      <div class="w-20 h-1 bg-blue-700 mx-auto mt-3 rounded-full"></div>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="flex flex-col md:flex-row items-center gap-12">
+
+      <!-- IMAGE -->
+      <div class="flex-1 flex justify-center">
+        <img
+          src="./assets/images/AlpheusNwani3.jpg"
+          alt="Alpheus Nwani"
+          class="w-72 h-72 object-cover rounded-2xl shadow-lg border-4 border-[#0b1f3a] hover:scale-105 transition duration-300"
+        />
+      </div>
+
+      <!-- TEXT -->
+      <div class="flex-1">
+
+        <h3 class="text-2xl font-semibold text-[#0b1f3a] mb-4">
+          Frontend Developer & AI Enthusiast
+        </h3>
+
+        <p class="text-gray-600 leading-relaxed mb-4">
+          Hello, I'm Alpheus Nwani, a beginner frontend developer who is passionate
+          about creating modern, responsive, and user-friendly web applications.
+          I enjoy learning new technologies and continuously improving my skills
+          through practical projects and hands-on experience.
+        </p>
+
+        <p class="text-gray-600 leading-relaxed mb-4">
+          My interests include frontend development, prompt engineering,
+          artificial intelligence, and building digital solutions that solve
+          real-world problems. I believe technology should be both functional
+          and easy to use.
+        </p>
+
+        <p class="text-gray-600 leading-relaxed">
+          I am committed to continuous learning and growth, and I enjoy
+          challenging myself with projects that improve my technical,
+          problem-solving, and creative thinking abilities.
+        </p>
+
+      </div>
+    </div>
+
+    <!-- INFO CARDS -->
+    <div class="grid md:grid-cols-3 gap-6 mt-16">
+
+      <!-- CARD 1 -->
+      <div
+        class="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition"
+      >
+        <h4 class="text-lg font-semibold text-[#0b1f3a] mb-2">
+          Location
+        </h4>
+
+        <p class="text-gray-600">
+          Nigeria
+        </p>
+      </div>
+
+      <!-- CARD 2 -->
+      <div
+        class="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition"
+      >
+        <h4 class="text-lg font-semibold text-[#0b1f3a] mb-2">
+          Area of Interest
+        </h4>
+
+        <p class="text-gray-600">
+          Frontend Development, AI & Prompt Engineering
+        </p>
+      </div>
+
+      <!-- CARD 3 -->
+      <div
+        class="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition"
+      >
+        <h4 class="text-lg font-semibold text-[#0b1f3a] mb-2">
+          Current Learning Focus
+        </h4>
+
+        <p class="text-gray-600">
+          JavaScript, AI Applications, and Web Development
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= SKILLS SECTION ================= -->
+<section
+  id="skills"
+  class="py-20 px-6 md:px-12 bg-gray-50"
+>
+  <div class="max-w-7xl mx-auto">
+
+    <!-- SECTION TITLE -->
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold text-[#0b1f3a]">
+        Skills
+      </h2>
+
+      <div class="w-20 h-1 bg-blue-700 mx-auto mt-3 rounded-full"></div>
+
+      <p class="mt-6 text-gray-600 max-w-2xl mx-auto">
+        Here are some of the technologies, tools, and concepts I am currently
+        learning and using to build modern web applications and AI-powered solutions.
+      </p>
+    </div>
+
+    <!-- SKILLS GRID -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+      <!-- FRONTEND -->
+      <div
+        class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300"
+      >
+        <div class="text-4xl text-[#0b1f3a] mb-4">
+          <i class="fa-solid fa-code"></i>
+        </div>
+
+        <h3 class="text-xl font-semibold text-[#0b1f3a] mb-3">
+          Frontend Development
+        </h3>
+
+        <ul class="space-y-2 text-gray-600">
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>Tailwind CSS</li>
+          <li>Responsive Design</li>
+        </ul>
+      </div>
+
+      <!-- PROGRAMMING -->
+      <div
+        class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300"
+      >
+        <div class="text-4xl text-[#0b1f3a] mb-4">
+          <i class="fa-solid fa-laptop-code"></i>
+        </div>
+
+        <h3 class="text-xl font-semibold text-[#0b1f3a] mb-3">
+          Programming
+        </h3>
+
+        <ul class="space-y-2 text-gray-600">
+          <li>JavaScript</li>
+          <li>Problem Solving</li>
+          <li>DOM Manipulation</li>
+          <li>Basic Debugging</li>
+        </ul>
+      </div>
+
+      <!-- AI -->
+      <div
+        class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300"
+      >
+        <div class="text-4xl text-[#0b1f3a] mb-4">
+          <i class="fa-solid fa-robot"></i>
+        </div>
+
+        <h3 class="text-xl font-semibold text-[#0b1f3a] mb-3">
+          AI & Prompt Engineering
+        </h3>
+
+        <ul class="space-y-2 text-gray-600">
+          <li>Prompt Engineering</li>
+          <li>AI-Assisted Development</li>
+          <li>Tokenization Concepts</li>
+          <li>Workflow Optimization</li>
+        </ul>
+      </div>
+
+      <!-- TOOLS -->
+      <div
+        class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300"
+      >
+        <div class="text-4xl text-[#0b1f3a] mb-4">
+          <i class="fa-solid fa-screwdriver-wrench"></i>
+        </div>
+
+        <h3 class="text-xl font-semibold text-[#0b1f3a] mb-3">
+          Tools & Technologies
+        </h3>
+
+        <ul class="space-y-2 text-gray-600">
+          <li>VS Code</li>
+          <li>Git (Learning)</li>
+          <li>Microsoft Excel</li>
+          <li>Different LLMs</li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= PROJECTS SECTION ================= -->
+<section
+  id="projects"
+  class="py-20 px-6 md:px-12 bg-white"
+>
+  <div class="max-w-7xl mx-auto">
+
+    <!-- SECTION TITLE -->
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold text-[#0b1f3a]">
+        Projects
+      </h2>
+
+      <div class="w-20 h-1 bg-blue-700 mx-auto mt-3 rounded-full"></div>
+
+      <p class="mt-6 text-gray-600 max-w-2xl mx-auto">
+        Below are projects completed during my learning program, showing
+        problem-solving, design thinking, coding implementation, and final delivery.
+      </p>
+    </div>
+
+    <!-- PROJECT CARDS -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- PROJECT 1 -->
+      <article class="bg-gray-50 rounded-xl shadow-md p-6 hover:shadow-xl hover:-translate-y-1 transition duration-300">
+
+        <h3 class="text-xl font-bold text-[#0b1f3a] mb-4">
+          MamaPutOnline
+        </h3>
+
+        <div class="space-y-3 text-gray-600">
+
+          <p>
+            <strong>Problem Solved:</strong>
+            Many people struggle to access freshly prepared Nigerian meals conveniently,
+            especially when away from home.
+          </p>
+
+          <p>
+            <strong>Design Phase:</strong>
+            Designed a clean, mobile-first food ordering interface focused on usability and simplicity.
+          </p>
+
+          <p>
+            <strong>Coding Phase:</strong>
+            Built responsive UI using HTML, CSS, and JavaScript.
+          </p>
+
+          <p>
+            <strong>Delivery Phase:</strong>
+            Delivered a functional prototype for browsing and ordering meals online.
+          </p>
+
+        </div>
+      </article>
+
+      <!-- PROJECT 2 -->
+      <article class="bg-gray-50 rounded-xl shadow-md p-6 hover:shadow-xl hover:-translate-y-1 transition duration-300">
+
+        <h3 class="text-xl font-bold text-[#0b1f3a] mb-4">
+          AI Tokenization Project
+        </h3>
+
+        <div class="space-y-3 text-gray-600">
+
+          <p>
+            <strong>Problem Solved:</strong>
+            Raw text data must be structured before it can be used in AI and NLP models.
+          </p>
+
+          <p>
+            <strong>Design Phase:</strong>
+            Planned structured token datasets including words, entities, and classifications.
+          </p>
+
+          <p>
+            <strong>Coding Phase:</strong>
+            Applied tokenization concepts and organized datasets for AI processing.
+          </p>
+
+          <p>
+            <strong>Delivery Phase:</strong>
+            Produced clean structured data ready for machine learning tasks.
+          </p>
+
+        </div>
+      </article>
+
+      <!-- PROJECT 3 -->
+      <article class="bg-gray-50 rounded-xl shadow-md p-6 hover:shadow-xl hover:-translate-y-1 transition duration-300">
+
+        <h3 class="text-xl font-bold text-[#0b1f3a] mb-4">
+          Personal Portfolio Website
+        </h3>
+
+        <div class="space-y-3 text-gray-600">
+
+          <p>
+            <strong>Problem Solved:</strong>
+            Developers need a professional platform to showcase skills, projects, and learning progress.
+          </p>
+
+          <p>
+            <strong>Design Phase:</strong>
+            Designed a modern responsive layout with clear sections and navigation.
+          </p>
+
+          <p>
+            <strong>Coding Phase:</strong>
+            Built using HTML, Tailwind CSS, JavaScript, and prompt engineering techniques.
+          </p>
+
+          <p>
+            <strong>Delivery Phase:</strong>
+            Delivered a fully responsive portfolio website showcasing development skills.
+          </p>
+
+        </div>
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================= CONTACT SECTION ================= -->
+<section
+  id="contact"
+  class="py-20 px-6 md:px-12 bg-gray-50"
+>
+  <div class="max-w-7xl mx-auto">
+
+    <!-- TITLE -->
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold text-[#0b1f3a]">
+        Contact Me
+      </h2>
+
+      <div class="w-20 h-1 bg-blue-700 mx-auto mt-3 rounded-full"></div>
+
+      <p class="mt-6 text-gray-600 max-w-2xl mx-auto">
+        Feel free to reach out for collaborations, opportunities, or any inquiries.
+        I am always open to learning and working on exciting projects.
+      </p>
+    </div>
+
+    <!-- CONTENT GRID -->
+    <div class="grid md:grid-cols-2 gap-10 items-start">
+
+      <!-- CONTACT FORM -->
+      <form class="bg-white p-8 rounded-xl shadow-md space-y-5">
+
+        <div>
+          <label class="block text-gray-700 mb-2">Full Name</label>
+          <input
+            type="text"
+            placeholder="Enter your name"
+            class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-700"
+          />
+        </div>
+
+        <div>
+          <label class="block text-gray-700 mb-2">Email Address</label>
+          <input
+            type="email"
+            placeholder="Enter your email"
+            class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-700"
+          />
+        </div>
+
+        <div>
+          <label class="block text-gray-700 mb-2">Message</label>
+          <textarea
+            rows="5"
+            placeholder="Write your message..."
+            class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-700"
+          ></textarea>
+        </div>
+
+        <button
+          type="submit"
+          class="w-full bg-[#0b1f3a] text-white py-3 rounded-lg hover:bg-blue-900 transition duration-300"
+        >
+          Send Message
+        </button>
+
+      </form>
+
+      <!-- CONTACT INFO -->
+      <div class="space-y-8">
+
+        <!-- EMAIL -->
+        <div class="bg-white p-6 rounded-xl shadow-md">
+          <h3 class="text-lg font-semibold text-[#0b1f3a] mb-2">
+            Email
+          </h3>
+          <p class="text-gray-600">Chuksnwani3@gmail.com</p>
+        </div>
+
+        <!-- SOCIAL LINKS -->
+        <div class="bg-white p-6 rounded-xl shadow-md">
+          <h3 class="text-lg font-semibold text-[#0b1f3a] mb-4">
+            Social Links
+          </h3>
+
+          <div class="flex gap-4 text-2xl text-[#0b1f3a]">
+
+            <a href="#" class="hover:text-blue-700 transition">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+            <a href="#" class="hover:text-blue-700 transition">
+              <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="#" class="hover:text-blue-700 transition">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer
+  class="sticky bottom-0 bg-[#0b1f3a] text-white py-6 px-6 md:px-12 z-40"
+>
+  <div
+    class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4"
+  >
+
+    <!-- LEFT -->
+    <div class="text-center md:text-left">
+      <h3 class="font-bold text-lg">
+        Alpheus Nwani
+      </h3>
+
+      <p class="text-sm text-gray-300">
+        Frontend Developer | AI Enthusiast | Prompt Engineer
+      </p>
+    </div>
+
+    <!-- CENTER -->
+    <div class="text-center text-sm text-gray-300">
+      © 2026 Alpheus Nwani. All Rights Reserved.
+    </div>
+
+    <!-- RIGHT -->
+    <div class="flex gap-5 text-xl">
+
+      <a
+        href="#"
+        class="hover:text-blue-300 transition duration-300"
+      >
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+
+      <a
+        href="#"
+        class="hover:text-blue-300 transition duration-300"
+      >
+        <i class="fa-brands fa-github"></i>
+      </a>
+
+      <a
+        href="#"
+        class="hover:text-blue-300 transition duration-300"
+      >
+        <i class="fa-brands fa-twitter"></i>
+      </a>
+
+
+      <a href="#home"
+         class="text-gray-500 hover:text-[#0b1f3a] transition">
+        Back to Top
+      </a>
+
+
+    </div>
+
+  </div>
+</footer>
+
+
+<!-- ================= JS ================= -->
+<script src="./js/script.js"></script>
+
+</body>
+</html>

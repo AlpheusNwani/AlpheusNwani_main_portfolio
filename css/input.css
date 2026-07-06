@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mobile-link {
+    @apply block py-2 hover:text-blue-300 active:text-blue-400 transition-colors duration-200
+
+}

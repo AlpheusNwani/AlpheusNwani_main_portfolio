@@ -1,0 +1,90 @@
+=============================
+PORTFOLIO ENGINEERING LOG
+=============================
+
+PROJECT OVERVIEW
+----------------
+This project is a personal portfolio website built using HTML, Tailwind CSS, and JavaScript.
+The goal was to apply AI-assisted development using prompt engineering while improving the output through manual refinement (vibe engineering).
+
+The website includes:
+- Sticky navigation bar
+- Hero section with CV download
+- About section with skills
+- Projects section with structured cards
+- Prompts Used section
+- Engineering Improvements section
+- Contact section
+- Sticky footer
+
+------------------------------------------------------------
+
+TOOLS USED
+-----------
+- HTML5
+- Tailwind CSS
+- JavaScript
+- Font Awesome Icons
+- VS Code
+- AI tools (ChatGPT) for prompt-based generation
+
+------------------------------------------------------------
+
+DEVELOPMENT APPROACH
+---------------------
+The project was developed using an iterative prompt engineering approach.
+
+Step 1:
+I generated initial UI components using structured prompts.
+
+Step 2:
+I reviewed the AI-generated output and identified usability and design issues.
+
+Step 3:
+I manually improved layout structure, responsiveness, and navigation behavior.
+
+Step 4:
+I organized the project into a clean folder structure using:
+- assets/ (images and CV)
+- docs/ (prompts and engineering logs)
+
+------------------------------------------------------------
+
+ENGINEERING IMPROVEMENTS (DETAILED)
+------------------------------------
+
+1. Navigation System
+Initially, the navigation was basic and lacked mobile optimization.
+I improved it by adding a hamburger menu, improving spacing, and adding hover effects for better user experience.
+
+2. Project Structure
+The original layout did not separate assets and documentation clearly.
+I introduced a structured folder system using assets and docs directories.
+
+3. Responsiveness
+I refined layout breakpoints using Tailwind CSS to ensure proper display across mobile, tablet, and desktop devices.
+
+4. Assignment Compliance
+I ensured all required sections were included:
+- Prompts Used
+- Engineering Improvements
+- Sticky navbar
+- Sticky footer
+- CV integration
+
+------------------------------------------------------------
+
+CHALLENGES FACED
+-----------------
+- Handling mobile navigation toggle behavior
+- Ensuring consistent spacing across sections
+- Organizing prompt outputs into a readable format
+- Understanding how to separate prompts from engineering work
+
+------------------------------------------------------------
+
+FINAL REFLECTION
+-----------------
+This project helped me understand the difference between generating code using AI and refining it through engineering thinking.
+
+I learned that prompt engineering alone is not enough; improving and restructuring AI output is a key part of modern frontend development.
