@@ -71,7 +71,7 @@ This project was created to:
 - Present my completed projects
 - Make it easy for employers and clients to contact me
 
----
+
 
 # Future Improvements
 
