@@ -15,534 +15,2215 @@
   />
 </head>
 
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-[#061426] text-white antialiased">
+<!-- ============================================================ -->
+<!-- ============================================================ -->
+<!--                    PREMIUM NAVBAR START                       -->
+<!-- ============================================================ -->
+<!-- ============================================================ -->
 
-<!-- ================= NAVBAR ================= -->
-<nav class="fixed top-0 left-0 w-full bg-[#0b1f3a] text-white shadow-md z-50">
+<nav
+  id="navbar"
+  class="fixed left-0 top-0 z-50 w-full border-b border-white/10 bg-[#061426]/95 text-white shadow-lg shadow-black/20 backdrop-blur-xl"
+>
 
-  <div class="flex justify-between items-center h-16 px-6 md:px-12">
+  <!-- ========================================================== -->
+  <!-- FULL-WIDTH NAVBAR CONTAINER                               -->
+  <!--                                                            -->
+  <!-- w-full allows the navbar content to use the full screen.  -->
+  <!-- There is no max-w class restricting the width.            -->
+  <!-- px-4 and lg:px-8 keep a small professional edge spacing.  -->
+  <!-- ========================================================== -->
 
-    <!-- LOGO -->
-    <div class="font-bold text-lg bg-white text-[#0b1f3a] px-3 py-1 rounded-md">
-      ALPHEUS NWANI
-    </div>
+  <div
+    class="flex h-20 w-full items-center justify-between px-4 sm:px-6 lg:px-8"
+  >
 
-    <!-- DESKTOP NAV -->
-    <ul class="hidden md:flex space-x-6 text-sm font-medium">
-      <li><a href="#home" class="hover:text-blue-300">Home</a></li>
-      <li><a href="#about" class="hover:text-blue-300">About</a></li>
-      <li><a href="#skills" class="hover:text-blue-300">Skills</a></li>
-      <li><a href="#projects" class="hover:text-blue-300">Projects</a></li>
-      <li><a href="#contact" class="hover:text-blue-300">Contact</a></li>
+
+    <!-- ======================================================== -->
+    <!-- BRAND / LOGO START                                      -->
+    <!-- ======================================================== -->
+
+    <a
+      href="#home"
+      class="group flex shrink-0 items-center gap-3"
+      aria-label="Go to the homepage"
+    >
+
+      <!-- Brand initials -->
+
+      <span
+        class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-blue-600 to-cyan-400 text-sm font-extrabold text-white shadow-lg shadow-blue-950/40 transition duration-300 group-hover:-translate-y-1 group-hover:shadow-xl"
+      >
+        AN
+      </span>
+
+
+      <!-- Name and professional title -->
+
+      <div class="leading-tight">
+
+        <p
+          class="text-sm font-extrabold tracking-wide text-white sm:text-base"
+        >
+          ALPHEUS NWANI
+        </p>
+
+        <p
+          class="mt-1 hidden text-xs font-medium text-gray-400 sm:block"
+        >
+          AI & Frontend Developer
+        </p>
+
+      </div>
+
+    </a>
+
+    <!-- ======================================================== -->
+    <!-- BRAND / LOGO END                                        -->
+    <!-- ======================================================== -->
+
+
+
+    <!-- ======================================================== -->
+    <!-- DESKTOP NAVIGATION START                                -->
+    <!--                                                            -->
+    <!-- Hidden on phones.                                       -->
+    <!-- Visible from the md breakpoint upward.                  -->
+    <!-- ======================================================== -->
+
+    <ul
+      class="ml-auto hidden items-center gap-6 text-sm font-semibold md:flex lg:gap-8 lg:text-base"
+    >
+
+
+      <!-- HOME LINK -->
+
+      <li>
+
+        <a
+          href="#home"
+          class="relative whitespace-nowrap py-3 text-gray-300 transition duration-300 hover:text-cyan-300 after:absolute after:bottom-1 after:left-0 after:h-[2px] after:w-0 after:rounded-full after:bg-cyan-400 after:transition-all after:duration-300 hover:after:w-full"
+        >
+          Home
+        </a>
+
+      </li>
+
+
+      <!-- ABOUT LINK -->
+
+      <li>
+
+        <a
+          href="#about"
+          class="relative whitespace-nowrap py-3 text-gray-300 transition duration-300 hover:text-cyan-300 after:absolute after:bottom-1 after:left-0 after:h-[2px] after:w-0 after:rounded-full after:bg-cyan-400 after:transition-all after:duration-300 hover:after:w-full"
+        >
+          About
+        </a>
+
+      </li>
+
+
+      <!-- SKILLS LINK -->
+
+      <li>
+
+        <a
+          href="#skills"
+          class="relative whitespace-nowrap py-3 text-gray-300 transition duration-300 hover:text-cyan-300 after:absolute after:bottom-1 after:left-0 after:h-[2px] after:w-0 after:rounded-full after:bg-cyan-400 after:transition-all after:duration-300 hover:after:w-full"
+        >
+          Skills
+        </a>
+
+      </li>
+
+
+      <!-- PROJECTS LINK -->
+
+      <li>
+
+        <a
+          href="#projects"
+          class="relative whitespace-nowrap py-3 text-gray-300 transition duration-300 hover:text-cyan-300 after:absolute after:bottom-1 after:left-0 after:h-[2px] after:w-0 after:rounded-full after:bg-cyan-400 after:transition-all after:duration-300 hover:after:w-full"
+        >
+          Projects
+        </a>
+
+      </li>
+
+
+      <!-- CONTACT BUTTON -->
+
+      <li class="ml-2">
+
+        <a
+          href="#contact"
+          class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-xl bg-gradient-to-r from-blue-600 to-cyan-500 px-5 py-3 font-bold text-white shadow-lg shadow-blue-950/40 transition duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-blue-900/40 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-offset-2 focus:ring-offset-[#061426]"
+        >
+
+          <i class="fa-solid fa-paper-plane"></i>
+
+          Contact
+
+        </a>
+
+      </li>
+
+
     </ul>
 
-    <!-- MOBILE MENU BUTTON -->
-    <button id="menu-btn" class="md:hidden text-2xl">
+    <!-- ======================================================== -->
+    <!-- DESKTOP NAVIGATION END                                  -->
+    <!-- ======================================================== -->
+
+
+
+    <!-- ======================================================== -->
+    <!-- MOBILE MENU BUTTON START                                -->
+    <!--                                                            -->
+    <!-- The IDs below match your JavaScript exactly.            -->
+    <!-- ======================================================== -->
+
+    <button
+      id="menu-btn"
+      type="button"
+      class="ml-auto flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-white/15 bg-white/5 text-xl text-white shadow-lg shadow-black/10 transition duration-300 hover:border-cyan-400 hover:bg-cyan-500 focus:outline-none focus:ring-2 focus:ring-cyan-400 md:hidden"
+      aria-label="Open navigation menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+
       <i class="fa-solid fa-bars"></i>
+
     </button>
 
+    <!-- ======================================================== -->
+    <!-- MOBILE MENU BUTTON END                                  -->
+    <!-- ======================================================== -->
+
+
   </div>
 
-  <!-- MOBILE NAV -->
-  <div id="mobile-menu" class="hidden md:hidden bg-[#0b1f3a] px-6 pb-4">
-    <a href="#home" class="mobile-link">Home</a>
-    <a href="#about" class="mobile-link">About</a>
-    <a href="#skills" class="mobile-link">Skills</a>
-    <a href="#projects" class="mobile-link">Projects</a>
-    <a href="#contact" class="mobile-link">Contact</a>
+
+
+  <!-- ========================================================== -->
+  <!-- MOBILE NAVIGATION START                                   -->
+  <!-- ========================================================== -->
+
+  <div
+    id="mobile-menu"
+    class="hidden border-t border-white/10 bg-[#061426]/98 px-4 pb-6 pt-4 shadow-2xl shadow-black/30 backdrop-blur-xl md:hidden"
+  >
+
+    <!-- No max-width restriction is used here -->
+
+    <div class="flex w-full flex-col gap-2">
+
+
+      <!-- MOBILE HOME LINK -->
+
+      <a
+        href="#home"
+        class="mobile-link rounded-xl px-4 py-3.5 text-base font-semibold text-gray-300 transition duration-300 hover:bg-white/10 hover:text-cyan-300"
+      >
+        Home
+      </a>
+
+
+      <!-- MOBILE ABOUT LINK -->
+
+      <a
+        href="#about"
+        class="mobile-link rounded-xl px-4 py-3.5 text-base font-semibold text-gray-300 transition duration-300 hover:bg-white/10 hover:text-cyan-300"
+      >
+        About
+      </a>
+
+
+      <!-- MOBILE SKILLS LINK -->
+
+      <a
+        href="#skills"
+        class="mobile-link rounded-xl px-4 py-3.5 text-base font-semibold text-gray-300 transition duration-300 hover:bg-white/10 hover:text-cyan-300"
+      >
+        Skills
+      </a>
+
+
+      <!-- MOBILE PROJECTS LINK -->
+
+      <a
+        href="#projects"
+        class="mobile-link rounded-xl px-4 py-3.5 text-base font-semibold text-gray-300 transition duration-300 hover:bg-white/10 hover:text-cyan-300"
+      >
+        Projects
+      </a>
+
+
+      <!-- MOBILE CONTACT BUTTON -->
+
+      <a
+        href="#contact"
+        class="mobile-link mt-3 inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-blue-600 to-cyan-500 px-5 py-4 text-base font-bold text-white shadow-lg shadow-blue-950/40 transition duration-300 hover:-translate-y-1 hover:shadow-xl"
+      >
+
+        <i class="fa-solid fa-paper-plane"></i>
+
+        Contact Me
+
+      </a>
+
+
+    </div>
+
   </div>
+
+  <!-- ========================================================== -->
+  <!-- MOBILE NAVIGATION END                                     -->
+  <!-- ========================================================== -->
+
 
 </nav>
 
+<!-- ============================================================ -->
+<!-- ============================================================ -->
+<!--                     PREMIUM NAVBAR END                        -->
+<!-- ============================================================ -->
+<!-- ============================================================ -->
 <main>
 
-  <!-- ================= HERO SECTION ================= -->
-<section id="home" class="pt-28 md:pt-32 px-6 md:px-12 flex flex-col md:flex-row items-center justify-between gap-10">
 
-  <!-- LEFT CONTENT -->
-  <div class="flex-1">
 
-    <h1 class="text-4xl md:text-5xl font-bold text-[#0b1f3a] leading-tight">
-      Hi, I'm <span class="text-blue-700">Alpheus Nwani</span>
-    </h1>
+  <!-- ============================================================ -->
+<!--                    PREMIUM HERO START                        -->
+<!-- ============================================================ -->
 
-    <p class="mt-3 text-lg text-gray-600 font-medium">
-      Frontend Developer | AI Enthusiast | Prompt Engineer
-    </p>
+<section
+  id="home"
+  class="relative min-h-screen scroll-mt-24 overflow-hidden bg-[#061426] px-6 pb-24 pt-32 text-white md:px-10 lg:px-12 lg:pb-20 lg:pt-36"
+>
 
-    <p class="mt-5 text-gray-500 max-w-xl leading-relaxed">
-      I am a beginner developer passionate about building modern responsive websites,
-      learning web technologies, and exploring AI-powered development tools to improve my skills.
-    </p>
+  <!-- ========================================================== -->
+  <!-- DECORATIVE BACKGROUND GLOWS                               -->
+  <!-- ========================================================== -->
 
-    <!-- BUTTONS -->
-    <div class="mt-6 flex flex-col sm:flex-row gap-4">
+  <div
+    class="pointer-events-none absolute -left-40 top-16 h-[420px] w-[420px] rounded-full bg-blue-600/20 blur-3xl"
+  ></div>
 
-      <a href="#projects"
-         class="bg-[#0b1f3a] text-white px-6 py-3 rounded-lg hover:bg-blue-900 transition duration-300 text-center">
-        View Projects
-      </a>
+  <div
+    class="pointer-events-none absolute -right-40 top-32 h-[460px] w-[460px] rounded-full bg-purple-600/20 blur-3xl"
+  ></div>
 
-      <a href="./assets/Alpheus_Nwani_ATS_Resume (2).pdf"
-         class="border border-[#0b1f3a] text-[#0b1f3a] px-6 py-3 rounded-lg hover:bg-[#0b1f3a] hover:text-white transition duration-300 text-center">
-        Download Resume
-      </a>
+  <div
+    class="pointer-events-none absolute bottom-0 left-1/3 h-80 w-80 rounded-full bg-cyan-500/10 blur-3xl"
+  ></div>
+
+
+  <!-- ========================================================== -->
+  <!-- TECHNOLOGY GRID BACKGROUND                                -->
+  <!-- ========================================================== -->
+
+  <div
+    class="pointer-events-none absolute inset-0 opacity-[0.035]"
+    style="
+      background-image:
+        linear-gradient(rgba(255, 255, 255, 0.7) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.7) 1px, transparent 1px);
+      background-size: 55px 55px;
+    "
+  ></div>
+
+
+  <!-- ========================================================== -->
+  <!-- HERO CONTENT CONTAINER                                    -->
+  <!-- ========================================================== -->
+
+  <div
+    class="relative z-10 mx-auto grid min-h-[calc(100vh-9rem)] max-w-7xl items-center gap-14 lg:grid-cols-[1.08fr_0.92fr] lg:gap-16"
+  >
+
+    <!-- ======================================================== -->
+    <!-- LEFT CONTENT START                                      -->
+    <!-- ======================================================== -->
+
+    <div class="mx-auto max-w-3xl text-center lg:mx-0 lg:text-left">
+
+      <!-- Availability badge -->
+<div
+    class="mb-7 inline-flex items-center gap-3 rounded-full border border-emerald-400/30 bg-emerald-500/10 px-5 py-2.5 text-sm font-semibold text-emerald-300 shadow-lg shadow-black/20 backdrop-blur-md"
+>
+
+    <i class="fa-solid fa-circle-check text-emerald-400"></i>
+
+    <span>
+        Open to International Remote Opportunities
+    </span>
+
+</div>
+
+
+      <!-- Professional category -->
+
+      <div
+    class="mb-5 flex flex-wrap items-center justify-center gap-5 text-xs font-bold uppercase tracking-[0.2em] text-cyan-400 sm:text-sm lg:justify-start"
+>
+
+    <span class="flex items-center gap-2">
+        <i class="fa-solid fa-microchip"></i>
+        Artificial Intelligence
+    </span>
+
+    <span class="flex items-center gap-2">
+        <i class="fa-solid fa-code"></i>
+        Frontend
+    </span>
+
+    <span class="flex items-center gap-2">
+        <i class="fa-solid fa-layer-group"></i>
+        Digital Products
+    </span>
+
+</div>
+
+      <!-- Main heading -->
+
+      <h1
+        class="text-5xl font-extrabold leading-[1.05] tracking-tight sm:text-6xl md:text-7xl xl:text-8xl"
+      >
+
+        <span class="block text-white">
+          Hello, I'm
+        </span>
+
+        <span
+          class="mt-3 block bg-gradient-to-r from-blue-400 via-cyan-300 to-blue-500 bg-clip-text text-transparent"
+        >
+          Alpheus Nwani
+        </span>
+
+      </h1>
+
+
+      <!-- Professional headline -->
+
+      <h2
+        class="mx-auto mt-7 max-w-2xl text-xl font-semibold leading-relaxed text-gray-200 sm:text-2xl lg:mx-0"
+      >
+        I build intelligent digital solutions through AI, frontend development and modern web technologies.
+      </h2>
+
+
+      <!-- Introductory paragraph -->
+
+      <p
+        class="mx-auto mt-6 max-w-2xl text-base leading-8 text-gray-400 sm:text-lg lg:mx-0"
+      >
+        I combine artificial intelligence, prompt engineering,
+        technical writing and web development to create practical
+        digital solutions. My portfolio includes e-books, podcasts,
+        blogs, translation projects, sentiment analysis and
+        responsive web applications.
+      </p>
+
+
+      <!-- ====================================================== -->
+      <!-- HERO BUTTONS                                          -->
+      <!-- ====================================================== -->
+
+      <div
+        class="mt-9 flex flex-col justify-center gap-4 sm:flex-row lg:justify-start"
+      >
+
+        <!-- Projects button -->
+
+        <a
+          href="#projects"
+          class="group inline-flex items-center justify-center gap-3 rounded-xl bg-gradient-to-r from-blue-600 to-cyan-500 px-7 py-4 font-bold text-white shadow-xl shadow-blue-950/40 transition duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-blue-900/50 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-offset-2 focus:ring-offset-[#061426]"
+        >
+
+          <i
+            class="fa-solid fa-rocket transition duration-300 group-hover:-translate-y-1 group-hover:translate-x-1"
+          ></i>
+
+          Explore My Projects
+
+        </a>
+
+
+        <!-- Resume button -->
+
+        <a
+          href="./assets/Alpheus-Nwani-Resume.pdf"
+          download
+          class="group inline-flex items-center justify-center gap-3 rounded-xl border border-white/20 bg-white/5 px-7 py-4 font-bold text-white shadow-lg shadow-black/10 backdrop-blur-md transition duration-300 hover:-translate-y-1 hover:border-white/40 hover:bg-white hover:text-[#061426] focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-offset-2 focus:ring-offset-[#061426]"
+        >
+
+          <i
+            class="fa-solid fa-download transition duration-300 group-hover:translate-y-1"
+          ></i>
+
+          Download Resume
+
+        </a>
+
+      </div>
+
+
+      <!-- ====================================================== -->
+      <!-- SOCIAL LINKS                                          -->
+      <!-- ====================================================== -->
+
+      <div
+        class="mt-9 flex items-center justify-center gap-4 lg:justify-start"
+      >
+
+        <!-- LinkedIn -->
+
+        <a
+          href="https://www.linkedin.com/in/alpheus-nwani/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Visit Alpheus Nwani on LinkedIn"
+          title="LinkedIn"
+          class="flex h-12 w-12 items-center justify-center rounded-full border border-white/15 bg-white/5 text-xl text-gray-300 shadow-lg shadow-black/10 backdrop-blur-md transition duration-300 hover:-translate-y-1 hover:border-blue-400 hover:bg-blue-600 hover:text-white"
+        >
+
+          <i class="fa-brands fa-linkedin-in"></i>
+
+        </a>
+
+
+        <!-- GitHub -->
+
+        <a
+          href="https://github.com/AlpheusNwani"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Visit Alpheus Nwani on GitHub"
+          title="GitHub"
+          class="flex h-12 w-12 items-center justify-center rounded-full border border-white/15 bg-white/5 text-xl text-gray-300 shadow-lg shadow-black/10 backdrop-blur-md transition duration-300 hover:-translate-y-1 hover:border-white hover:bg-white hover:text-[#061426]"
+        >
+
+          <i class="fa-brands fa-github"></i>
+
+        </a>
+
+
+        <!-- Email -->
+
+        <a
+          href="mailto:Chuksnwani3@gmail.com"
+          aria-label="Send an email to Alpheus Nwani"
+          title="Email"
+          class="flex h-12 w-12 items-center justify-center rounded-full border border-white/15 bg-white/5 text-xl text-gray-300 shadow-lg shadow-black/10 backdrop-blur-md transition duration-300 hover:-translate-y-1 hover:border-cyan-400 hover:bg-cyan-500 hover:text-white"
+        >
+
+          <i class="fa-solid fa-envelope"></i>
+
+        </a>
+
+
+        <span class="ml-2 hidden text-sm text-gray-500 sm:inline">
+          Connect with me
+        </span>
+
+      </div>
 
     </div>
 
+    <!-- ======================================================== -->
+    <!-- LEFT CONTENT END                                        -->
+    <!-- ======================================================== -->
+
+
+    <!-- ======================================================== -->
+    <!-- RIGHT IMAGE AREA START                                  -->
+    <!-- ======================================================== -->
+
+    <div
+      class="relative mx-auto flex w-full max-w-[520px] flex-col items-center justify-center pb-16 lg:pb-8"
+    >
+      <!-- Image background glow -->
+      <div
+        class="absolute inset-10 rounded-[3rem] bg-gradient-to-br from-blue-500/30 via-cyan-400/10 to-purple-600/30 blur-3xl"
+      ></div>
+
+      <!-- Decorative ring -->
+      <div
+        class="absolute left-1/2 top-1/2 h-[330px] w-[330px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-blue-400/20 sm:h-[420px] sm:w-[420px]"
+      ></div>
+
+      <!-- Portrait container -->
+      <div
+        class="relative rounded-[2.5rem] border border-white/15 bg-white/5 p-2 shadow-2xl shadow-black/40 backdrop-blur-xl"
+      >
+        <img
+          src="./assets/images/alpheus-hero.png"
+          alt="Alpheus Nwani, artificial intelligence and frontend developer"
+          class="h-[430px] w-[300px] rounded-[2rem] object-cover object-top sm:h-[530px] sm:w-[380px] lg:h-[570px] lg:w-[410px]"
+        />
+
+        <div
+          class="pointer-events-none absolute inset-2 rounded-[2rem] bg-gradient-to-t from-[#061426]/35 via-transparent to-transparent"
+        ></div>
+      </div>
+
+      <!-- AI developer card -->
+      <div
+        class="absolute -bottom-1 left-1 z-20 rounded-2xl border border-white/20 bg-white/95 px-5 py-4 text-[#061426] shadow-2xl shadow-black/30 backdrop-blur-xl sm:-left-4 lg:-bottom-4 lg:-left-8"
+      >
+        <div class="flex items-center gap-3">
+          <div
+            class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-blue-600 text-lg text-white"
+          >
+            <i class="fa-solid fa-laptop-code"></i>
+          </div>
+
+          <div>
+            <p class="text-base font-extrabold sm:text-lg">
+              AI & Frontend Developer
+            </p>
+
+            <p class="text-xs font-medium text-gray-600">
+              Intelligent Digital Products
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- AI solutions card -->
+      <div
+        class="relative z-20 mb-5 ml-1 mt-6 w-full max-w-[250px] self-start rounded-2xl border border-white/15 bg-[#0d213d]/95 px-4 py-3.5 text-white shadow-2xl shadow-black/30 backdrop-blur-xl sm:absolute sm:right-2 sm:top-40 sm:mb-0 sm:ml-0 sm:mt-0 sm:w-auto sm:max-w-[220px] lg:-right-12 lg:top-28 lg:max-w-[230px]"
+      >
+        <div class="flex items-center gap-3">
+          <div
+            class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-cyan-500/15 text-cyan-400"
+          >
+            <i class="fa-solid fa-microchip"></i>
+          </div>
+
+          <div>
+            <p class="text-sm font-bold">
+              AI Solutions
+            </p>
+
+            <p class="mt-1 text-[11px] leading-4 text-gray-400">
+              Frontend • AI • Prompt Engineering
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======================================================== -->
+    <!-- RIGHT IMAGE AREA END                                    -->
+    <!-- ======================================================== -->
+
   </div>
 
-  <!-- RIGHT IMAGE -->
-  <div class="flex-1 flex justify-center">
 
-    <img src="./assets/images/AlpheusNwani.jpg"
-         alt="Alpheus Nwani"
-         class="w-72 h-72 md:w-80 md:h-80 object-cover rounded-full shadow-lg border-4 border-[#0b1f3a]">
+  <!-- ========================================================== -->
+  <!-- SCROLL-DOWN BUTTON                                        -->
+  <!-- ========================================================== -->
 
-  </div>
+  <a
+    href="#about"
+    aria-label="Scroll down to the About section"
+    class="absolute bottom-6 left-1/2 z-20 hidden h-11 w-11 -translate-x-1/2 animate-bounce items-center justify-center rounded-full border border-white/15 bg-white/5 text-gray-300 backdrop-blur-md transition duration-300 hover:border-blue-400 hover:bg-blue-600 hover:text-white lg:flex"
+  >
+
+    <i class="fa-solid fa-chevron-down"></i>
+
+  </a>
 
 </section>
 
-<!-- ================= ABOUT SECTION ================= -->
+<!-- ============================================================ -->
+<!--                     PREMIUM HERO END                         -->
+<!-- ============================================================ -->
+
+<!-- ============================================================ -->
+<!-- ============================================================ -->
+<!--                    PREMIUM ABOUT START                       -->
+<!-- ============================================================ -->
+<!-- ============================================================ -->
+
 <section
   id="about"
-  class="py-20 px-6 md:px-12 bg-white"
+  class="relative scroll-mt-24 overflow-hidden bg-[#091a30] px-5 py-20 text-white sm:px-6 sm:py-24 md:px-10 md:py-28 lg:px-12 lg:py-32"
 >
-  <div class="max-w-7xl mx-auto">
 
-    <!-- SECTION TITLE -->
-    <div class="text-center mb-12">
-      <h2 class="text-3xl md:text-4xl font-bold text-[#0b1f3a]">
-        About Me
-      </h2>
+  <!-- ========================================================== -->
+  <!-- DECORATIVE BACKGROUND GLOWS                               -->
+  <!-- These shapes create the soft premium lighting effect.     -->
+  <!-- They are decorative only and cannot be clicked.           -->
+  <!-- ========================================================== -->
 
-      <div class="w-20 h-1 bg-blue-700 mx-auto mt-3 rounded-full"></div>
-    </div>
+  <div
+    class="pointer-events-none absolute -left-44 top-20 h-[400px] w-[400px] rounded-full bg-blue-600/15 blur-3xl"
+  ></div>
 
-    <!-- CONTENT -->
-    <div class="flex flex-col md:flex-row items-center gap-12">
+  <div
+    class="pointer-events-none absolute -right-48 bottom-20 h-[460px] w-[460px] rounded-full bg-purple-600/15 blur-3xl"
+  ></div>
 
-      <!-- IMAGE -->
-      <div class="flex-1 flex justify-center">
-        <img
-          src="./assets/images/AlpheusNwani3.jpg"
-          alt="Alpheus Nwani"
-          class="w-72 h-72 object-cover rounded-2xl shadow-lg border-4 border-[#0b1f3a] hover:scale-105 transition duration-300"
-        />
+  <div
+    class="pointer-events-none absolute left-1/3 top-1/2 h-80 w-80 -translate-y-1/2 rounded-full bg-cyan-500/10 blur-3xl"
+  ></div>
+
+
+  <!-- ========================================================== -->
+  <!-- SUBTLE TECHNOLOGY GRID BACKGROUND                         -->
+  <!-- ========================================================== -->
+
+  <div
+    class="pointer-events-none absolute inset-0 opacity-[0.025]"
+    style="
+      background-image:
+        linear-gradient(rgba(255, 255, 255, 0.7) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.7) 1px, transparent 1px);
+      background-size: 55px 55px;
+    "
+  ></div>
+
+
+  <!-- ========================================================== -->
+  <!-- ABOUT SECTION MAIN CONTAINER                              -->
+  <!-- ========================================================== -->
+
+  <div class="relative z-10 mx-auto max-w-7xl">
+
+
+    <!-- ======================================================== -->
+    <!-- SECTION HEADING START                                   -->
+    <!-- ======================================================== -->
+
+    <div class="mx-auto mb-14 max-w-3xl text-center md:mb-16">
+
+      <!-- Small section label -->
+
+      <div
+        class="mb-5 inline-flex items-center gap-2 rounded-full border border-cyan-400/25 bg-cyan-400/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.2em] text-cyan-300 shadow-lg shadow-black/10 backdrop-blur-md"
+      >
+
+        <i class="fa-solid fa-user"></i>
+
+        <span>About Me</span>
+
       </div>
 
-      <!-- TEXT -->
-      <div class="flex-1">
 
-        <h3 class="text-2xl font-semibold text-[#0b1f3a] mb-4">
-          Frontend Developer & AI Enthusiast
+      <!-- Main section heading -->
+
+      <h2
+        class="text-4xl font-extrabold leading-[1.12] tracking-tight text-white sm:text-5xl lg:text-6xl"
+      >
+
+        Turning Ideas Into
+
+        <span
+          class="mt-2 block bg-gradient-to-r from-blue-400 via-cyan-300 to-blue-500 bg-clip-text text-transparent"
+        >
+          Useful Digital Solutions
+        </span>
+
+      </h2>
+
+
+      <!-- Short section introduction -->
+
+      <p
+        class="mx-auto mt-6 max-w-2xl text-base leading-8 text-gray-400 sm:text-lg"
+      >
+        I approach technology with curiosity, creativity and a strong desire
+        to solve practical problems through thoughtful digital experiences.
+      </p>
+
+    </div>
+
+    <!-- ======================================================== -->
+    <!-- SECTION HEADING END                                     -->
+    <!-- ======================================================== -->
+
+
+
+    <!-- ======================================================== -->
+    <!-- MAIN ABOUT CONTENT START                                -->
+    <!-- ======================================================== -->
+
+    <div
+      class="grid items-center gap-14 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16 xl:gap-24"
+    >
+
+
+      <!-- ====================================================== -->
+      <!-- ABOUT IMAGE COLUMN START                              -->
+      <!-- ====================================================== -->
+
+      <div class="mx-auto w-full max-w-[530px]">
+
+
+        <!-- Image and decorative frame wrapper -->
+
+        <div class="relative">
+
+
+          <!-- Large glow behind the portrait -->
+
+          <div
+            class="pointer-events-none absolute inset-8 rounded-[3rem] bg-gradient-to-br from-blue-500/25 via-cyan-400/10 to-purple-600/25 blur-3xl"
+          ></div>
+
+
+          <!-- Subtle outer decorative frame -->
+
+          <div
+            class="pointer-events-none absolute -inset-3 rounded-[2.7rem] border border-cyan-400/10"
+          ></div>
+
+
+          <!-- Main portrait card -->
+
+          <div
+            class="group relative overflow-hidden rounded-[2rem] border border-white/15 bg-white/5 p-2 shadow-2xl shadow-black/40 backdrop-blur-xl sm:rounded-[2.5rem]"
+          >
+
+            <!--
+              Confirm that the image inside your folder is named:
+
+              alpheus-about.png
+
+              Folder:
+              assets/images/
+            -->
+
+            <img
+              src="./assets/images/alpheus-about.png"
+              alt="Alpheus Nwani seated in a modern professional workspace"
+              class="h-[440px] w-full rounded-[1.6rem] object-cover object-center transition duration-700 group-hover:scale-[1.03] sm:h-[540px] sm:rounded-[2rem] lg:h-[570px]"
+            />
+
+
+            <!-- Dark gradient placed over the lower part of the image -->
+
+            <div
+              class="pointer-events-none absolute inset-2 rounded-[1.6rem] bg-gradient-to-t from-[#061426]/85 via-[#061426]/10 to-transparent sm:rounded-[2rem]"
+            ></div>
+
+
+            <!-- ================================================= -->
+            <!-- PROFESSIONAL IDENTITY CARD INSIDE THE IMAGE        -->
+            <!-- ================================================= -->
+
+            <div
+              class="absolute bottom-5 left-5 right-5 rounded-2xl border border-white/15 bg-[#061426]/90 p-4 shadow-2xl shadow-black/30 backdrop-blur-xl sm:bottom-6 sm:left-6 sm:right-6 sm:p-5"
+            >
+
+              <div class="flex items-center gap-3 sm:gap-4">
+
+
+                <!-- Identity icon -->
+
+                <div
+                  class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-blue-600 to-cyan-500 text-base text-white shadow-lg shadow-blue-950/40 sm:h-12 sm:w-12 sm:text-lg"
+                >
+
+                  <i class="fa-solid fa-laptop-code"></i>
+
+                </div>
+
+
+                <!-- Name and professional role -->
+
+                <div class="min-w-0">
+
+                  <p
+                    class="truncate text-sm font-extrabold text-white sm:text-lg"
+                  >
+                    Alpheus Nwani
+                  </p>
+
+                  <p
+                    class="mt-1 truncate text-[11px] font-medium text-gray-300 sm:text-sm"
+                  >
+                    Frontend Developer &bull; AI Enthusiast
+                  </p>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- ==================================================== -->
+        <!-- REMOTE AVAILABILITY CARD                             -->
+        <!--                                                      -->
+        <!-- Mobile and tablet: displayed below the image.        -->
+        <!-- Extra-large desktop: floats beside the image.        -->
+        <!-- This prevents the card from covering the face.       -->
+        <!-- ==================================================== -->
+
+        <div
+          class="relative z-20 mx-auto mt-5 w-full max-w-[340px] rounded-2xl border border-emerald-400/20 bg-[#0d213d]/95 px-5 py-4 shadow-2xl shadow-black/30 backdrop-blur-xl xl:absolute xl:-right-10 xl:top-12 xl:mt-0 xl:w-auto xl:max-w-none"
+        >
+
+          <div class="flex items-center gap-3">
+
+
+            <!-- Availability icon -->
+
+            <div
+              class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-emerald-500/15 text-emerald-400"
+            >
+
+              <i class="fa-solid fa-circle-check"></i>
+
+            </div>
+
+
+            <!-- Availability information -->
+
+            <div>
+
+              <p class="text-sm font-bold text-white">
+                Available for Remote Work
+              </p>
+
+              <p class="mt-1 text-xs text-gray-400">
+                Open to global opportunities
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- ====================================================== -->
+      <!-- ABOUT IMAGE COLUMN END                                -->
+      <!-- ====================================================== -->
+
+
+
+      <!-- ====================================================== -->
+      <!-- ABOUT TEXT COLUMN START                               -->
+      <!-- ====================================================== -->
+
+      <div class="text-center lg:text-left">
+
+
+        <!-- Small professional label -->
+
+        <p
+          class="mb-3 text-sm font-bold uppercase tracking-[0.2em] text-cyan-400"
+        >
+          Who I Am
+        </p>
+
+
+        <!-- Professional headline -->
+
+        <h3
+          class="text-3xl font-extrabold leading-tight text-white sm:text-4xl"
+        >
+
+              Frontend Developer &amp;
+
+            <span class="block text-cyan-300 sm:inline">
+              AI Enthusiast
+            </span>
+
         </h3>
 
-        <p class="text-gray-600 leading-relaxed mb-4">
-          Hello, I'm Alpheus Nwani, a beginner frontend developer who is passionate
-          about creating modern, responsive, and user-friendly web applications.
-          I enjoy learning new technologies and continuously improving my skills
-          through practical projects and hands-on experience.
+
+        <!-- Biography paragraph one -->
+
+          <p 
+          class="mx-auto mt-7 max-w-2xl text-base leading-8 text-gray-300 sm:text-lg lg:mx-0"
+        >
+            Hello, I'm Alpheus Nwani, a Frontend Developer and AI enthusiast who
+            enjoys transforming ideas into clear, functional and engaging digital
+            experiences. I enjoy building intuitive, responsive and accessible digital solutions that solve real user problems.
         </p>
 
-        <p class="text-gray-600 leading-relaxed mb-4">
-          My interests include frontend development, prompt engineering,
-          artificial intelligence, and building digital solutions that solve
-          real-world problems. I believe technology should be both functional
-          and easy to use.
+        <!-- Biography paragraph two -->
+
+        <p
+          class="mx-auto mt-5 max-w-2xl text-base leading-8 text-gray-400 sm:text-lg lg:mx-0"
+        >
+          I believe great digital products begin with understanding the problem
+          before writing the first line of code. I focus on structure, usability,
+          accessibility and the details that make digital experiences feel
+          professional and enjoyable.
         </p>
 
-        <p class="text-gray-600 leading-relaxed">
-          I am committed to continuous learning and growth, and I enjoy
-          challenging myself with projects that improve my technical,
-          problem-solving, and creative thinking abilities.
+
+        <!-- Biography paragraph three -->
+
+        <p
+          class="mx-auto mt-5 max-w-2xl text-base leading-8 text-gray-400 sm:text-lg lg:mx-0"
+        >
+          I continuously strengthen my skills through hands-on projects,
+          collaboration and lifelong learning. My goal is to contribute to
+          innovative products, work with international teams and build technology
+          that creates meaningful impact.
         </p>
+
+
+
+        <!-- ==================================================== -->
+        <!-- PERSONAL STRENGTH CARDS                              -->
+        <!-- These represent professional qualities rather than   -->
+        <!-- technical skills. Technical skills appear later in   -->
+        <!-- the dedicated Skills section.                        -->
+        <!-- ==================================================== -->
+
+        <div class="mt-8 grid gap-4 sm:grid-cols-2">
+
+
+          <!-- Problem Solving card -->
+
+          <article
+            class="group flex items-start gap-4 rounded-2xl border border-white/10 bg-white/[0.04] p-5 text-left shadow-lg shadow-black/10 backdrop-blur-md transition duration-300 hover:-translate-y-1 hover:border-blue-400/40 hover:bg-white/[0.07]"
+          >
+
+            <div
+              class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-blue-500/15 text-blue-400 transition duration-300 group-hover:bg-blue-600 group-hover:text-white"
+            >
+
+              <i class="fa-solid fa-lightbulb"></i>
+
+            </div>
+
+            <div>
+
+              <h4 class="font-bold text-white">
+                Practical Problem Solving
+              </h4>
+
+              <p class="mt-2 text-sm leading-6 text-gray-400">
+                Breaking complex ideas into clear steps and building solutions
+                that address genuine needs.
+              </p>
+
+            </div>
+
+          </article>
+
+
+          <!-- Continuous Growth card -->
+
+          <article
+            class="group flex items-start gap-4 rounded-2xl border border-white/10 bg-white/[0.04] p-5 text-left shadow-lg shadow-black/10 backdrop-blur-md transition duration-300 hover:-translate-y-1 hover:border-cyan-400/40 hover:bg-white/[0.07]"
+          >
+
+            <div
+              class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-cyan-500/15 text-cyan-400 transition duration-300 group-hover:bg-cyan-500 group-hover:text-white"
+            >
+
+              <i class="fa-solid fa-arrow-trend-up"></i>
+
+            </div>
+
+            <div>
+
+              <h4 class="font-bold text-white">
+                Continuous Growth
+              </h4>
+
+              <p class="mt-2 text-sm leading-6 text-gray-400">
+                Strengthening my abilities through hands-on projects,
+                feedback, research and consistent practice.
+              </p>
+
+            </div>
+
+          </article>
+
+        </div>
+
+
+
+        <!-- ==================================================== -->
+        <!-- ABOUT ACTION BUTTONS                                 -->
+        <!-- ==================================================== -->
+
+        <div
+          class="mt-9 flex flex-col justify-center gap-4 sm:flex-row lg:justify-start"
+        >
+
+
+          <!-- Contact button -->
+
+          <a
+            href="#contact"
+            class="group inline-flex w-full items-center justify-center gap-3 rounded-xl bg-gradient-to-r from-blue-600 to-cyan-500 px-7 py-4 font-bold text-white shadow-xl shadow-blue-950/40 transition duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-blue-900/50 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-offset-2 focus:ring-offset-[#091a30] sm:w-auto"
+          >
+
+            <i
+              class="fa-solid fa-paper-plane transition duration-300 group-hover:translate-x-1"
+            ></i>
+
+            Let’s Work Together
+
+          </a>
+
+
+          <!-- Projects button -->
+
+          <a
+            href="#projects"
+            class="group inline-flex w-full items-center justify-center gap-3 rounded-xl border border-white/20 bg-white/5 px-7 py-4 font-bold text-white shadow-lg shadow-black/10 backdrop-blur-md transition duration-300 hover:-translate-y-1 hover:border-cyan-400/50 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-offset-2 focus:ring-offset-[#091a30] sm:w-auto"
+          >
+
+            <i
+              class="fa-solid fa-folder-open transition duration-300 group-hover:scale-110"
+            ></i>
+
+            View My Work
+
+          </a>
+
+        </div>
 
       </div>
+
+      <!-- ====================================================== -->
+      <!-- ABOUT TEXT COLUMN END                                 -->
+      <!-- ====================================================== -->
+
+
     </div>
 
-    <!-- INFO CARDS -->
-    <div class="grid md:grid-cols-3 gap-6 mt-16">
+    <!-- ======================================================== -->
+    <!-- MAIN ABOUT CONTENT END                                  -->
+    <!-- ======================================================== -->
 
-      <!-- CARD 1 -->
-      <div
-        class="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition"
+
+
+    <!-- ======================================================== -->
+    <!-- ABOUT SUMMARY CARDS START                               -->
+    <!--                                                        -->
+    <!-- These cards explain:                                   -->
+    <!-- 1. What you have worked on.                            -->
+    <!-- 2. How you approach your work.                         -->
+    <!-- 3. Where you are growing professionally.               -->
+    <!--                                                        -->
+    <!-- Technology names are intentionally limited here        -->
+    <!-- because the next section gives the full Skills list.   -->
+    <!-- ======================================================== -->
+
+    <div class="mt-16 grid gap-6 md:mt-20 md:grid-cols-2 xl:grid-cols-3">
+
+
+      <!-- ====================================================== -->
+      <!-- PRACTICAL EXPERIENCE CARD                             -->
+      <!-- ====================================================== -->
+
+      <article
+        class="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.045] p-6 shadow-xl shadow-black/20 backdrop-blur-xl transition duration-300 hover:-translate-y-2 hover:border-blue-400/40 hover:bg-white/[0.07] hover:shadow-2xl sm:p-7"
       >
-        <h4 class="text-lg font-semibold text-[#0b1f3a] mb-2">
-          Location
-        </h4>
 
-        <p class="text-gray-600">
-          Nigeria
+
+        <!-- Decorative glow -->
+
+        <div
+          class="pointer-events-none absolute -right-12 -top-12 h-32 w-32 rounded-full bg-blue-600/15 blur-2xl transition duration-300 group-hover:bg-blue-600/25"
+        ></div>
+
+
+        <!-- Card icon -->
+
+        <div
+          class="relative flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-500/15 text-2xl text-blue-400 transition duration-300 group-hover:bg-blue-600 group-hover:text-white"
+        >
+
+          <i class="fa-solid fa-briefcase"></i>
+
+        </div>
+
+
+        <!-- Card heading -->
+
+        <h3 class="relative mt-6 text-xl font-extrabold text-white">
+          Practical Experience
+        </h3>
+
+
+        <!-- Card description -->
+
+        <p class="relative mt-3 text-sm leading-7 text-gray-400">
+          Applying what I learn through websites, AI-supported projects,
+          digital products and structured professional content.
         </p>
-      </div>
 
-      <!-- CARD 2 -->
-      <div
-        class="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition"
+
+        <!-- Experience tags -->
+
+        <div class="relative mt-5 flex flex-wrap gap-2">
+
+          <span
+            class="rounded-full border border-blue-400/20 bg-blue-500/10 px-3 py-1.5 text-xs font-semibold text-blue-300"
+          >
+            Web Applications
+          </span>
+
+          <span
+            class="rounded-full border border-blue-400/20 bg-blue-500/10 px-3 py-1.5 text-xs font-semibold text-blue-300"
+          >
+            AI Solutions
+          </span>
+
+          <span
+            class="rounded-full border border-blue-400/20 bg-blue-500/10 px-3 py-1.5 text-xs font-semibold text-blue-300"
+          >
+            Digital Products
+          </span>
+
+          <span
+            class="rounded-full border border-blue-400/20 bg-blue-500/10 px-3 py-1.5 text-xs font-semibold text-blue-300"
+          >
+            Technical Writing
+          </span>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- ====================================================== -->
+      <!-- PROFESSIONAL APPROACH CARD                            -->
+      <!-- ====================================================== -->
+
+      <article
+        class="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.045] p-6 shadow-xl shadow-black/20 backdrop-blur-xl transition duration-300 hover:-translate-y-2 hover:border-cyan-400/40 hover:bg-white/[0.07] hover:shadow-2xl sm:p-7"
       >
-        <h4 class="text-lg font-semibold text-[#0b1f3a] mb-2">
-          Area of Interest
-        </h4>
 
-        <p class="text-gray-600">
-          Frontend Development, AI & Prompt Engineering
+
+        <!-- Decorative glow -->
+
+        <div
+          class="pointer-events-none absolute -right-12 -top-12 h-32 w-32 rounded-full bg-cyan-500/15 blur-2xl transition duration-300 group-hover:bg-cyan-500/25"
+        ></div>
+
+
+        <!-- Card icon -->
+
+        <div
+          class="relative flex h-14 w-14 items-center justify-center rounded-2xl bg-cyan-500/15 text-2xl text-cyan-400 transition duration-300 group-hover:bg-cyan-500 group-hover:text-white"
+        >
+
+          <i class="fa-solid fa-compass-drafting"></i>
+
+        </div>
+
+
+        <!-- Card heading -->
+
+        <h3 class="relative mt-6 text-xl font-extrabold text-white">
+          Professional Approach
+        </h3>
+
+
+        <!-- Card description -->
+
+        <p class="relative mt-3 text-sm leading-7 text-gray-400">
+          Designing thoughtful digital experiences through careful planning, clean code, usability and attention to detail.
         </p>
-      </div>
 
-      <!-- CARD 3 -->
-      <div
-        class="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition"
+
+        <!-- Professional approach tags -->
+
+        <div class="relative mt-5 flex flex-wrap gap-2">
+
+          <span
+            class="rounded-full border border-cyan-400/20 bg-cyan-500/10 px-3 py-1.5 text-xs font-semibold text-cyan-300"
+          >
+            Problem Solving
+          </span>
+
+          <span
+            class="rounded-full border border-cyan-400/20 bg-cyan-500/10 px-3 py-1.5 text-xs font-semibold text-cyan-300"
+          >
+            User-Centered Design
+          </span>
+
+          <span
+            class="rounded-full border border-cyan-400/20 bg-cyan-500/10 px-3 py-1.5 text-xs font-semibold text-cyan-300"
+          >
+            Clear Communication
+          </span>
+
+          <span
+            class="rounded-full border border-cyan-400/20 bg-cyan-500/10 px-3 py-1.5 text-xs font-semibold text-cyan-300"
+          >
+            Attention to Detail
+          </span>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- ====================================================== -->
+      <!-- CONTINUOUS LEARNING CARD                              -->
+      <!-- This replaces the old Currently Exploring title.      -->
+      <!-- ====================================================== -->
+
+      <article
+        class="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.045] p-6 shadow-xl shadow-black/20 backdrop-blur-xl transition duration-300 hover:-translate-y-2 hover:border-purple-400/40 hover:bg-white/[0.07] hover:shadow-2xl sm:p-7 md:col-span-2 xl:col-span-1"
       >
-        <h4 class="text-lg font-semibold text-[#0b1f3a] mb-2">
-          Current Learning Focus
-        </h4>
 
-        <p class="text-gray-600">
-          JavaScript, AI Applications, and Web Development
+
+        <!-- Decorative glow -->
+
+        <div
+          class="pointer-events-none absolute -right-12 -top-12 h-32 w-32 rounded-full bg-purple-600/15 blur-2xl transition duration-300 group-hover:bg-purple-600/25"
+        ></div>
+
+
+        <!-- Card icon -->
+
+        <div
+          class="relative flex h-14 w-14 items-center justify-center rounded-2xl bg-purple-500/15 text-2xl text-purple-400 transition duration-300 group-hover:bg-purple-600 group-hover:text-white"
+        >
+
+          <i class="fa-solid fa-graduation-cap"></i>
+
+        </div>
+
+
+        <!-- Card heading -->
+
+        <h3 class="relative mt-6 text-xl font-extrabold text-white">
+          Continuous Learning
+        </h3>
+
+
+        <!-- Card description -->
+
+        <p class="relative mt-3 text-sm leading-7 text-gray-400">
+          Continuously improving through hands-on projects, research and emerging technologies to become a better developer every day.
         </p>
-      </div>
+
+
+        <!-- Learning direction tags -->
+
+        <div class="relative mt-5 flex flex-wrap gap-2">
+
+          <span
+            class="rounded-full border border-purple-400/20 bg-purple-500/10 px-3 py-1.5 text-xs font-semibold text-purple-300"
+          >
+            Frontend Engineering
+          </span>
+
+          <span
+            class="rounded-full border border-purple-400/20 bg-purple-500/10 px-3 py-1.5 text-xs font-semibold text-purple-300"
+          >
+            Artificial Intelligence
+          </span>
+
+          <span
+            class="rounded-full border border-purple-400/20 bg-purple-500/10 px-3 py-1.5 text-xs font-semibold text-purple-300"
+          >
+            Emerging Technologies
+          </span>
+
+        </div>
+
+      </article>
 
     </div>
+
+    <!-- ======================================================== -->
+    <!-- ABOUT SUMMARY CARDS END                                 -->
+    <!-- ======================================================== -->
+
 
   </div>
+
 </section>
 
-<!-- ================= SKILLS SECTION ================= -->
+<!-- ============================================================ -->
+<!-- ============================================================ -->
+<!--                     PREMIUM ABOUT END                         -->
+<!-- ============================================================ -->
+
+<!-- ============================================================ -->
+<!-- ============================================================ -->
+<!--              ASSIGNMENT-FOCUSED SKILLS START                 -->
+<!-- ============================================================ -->
+<!-- ============================================================ -->
+
 <section
   id="skills"
-  class="py-20 px-6 md:px-12 bg-gray-50"
+  class="relative scroll-mt-24 overflow-hidden bg-[#061426] px-5 py-20 text-white sm:px-6 sm:py-24 md:px-10 md:py-28 lg:px-12 lg:py-32"
 >
-  <div class="max-w-7xl mx-auto">
 
-    <!-- SECTION TITLE -->
-    <div class="text-center mb-12">
-      <h2 class="text-3xl md:text-4xl font-bold text-[#0b1f3a]">
-        Skills
+  <!-- Decorative background glows -->
+
+  <div
+    class="pointer-events-none absolute -left-48 top-20 h-[430px] w-[430px] rounded-full bg-blue-600/15 blur-3xl"
+  ></div>
+
+  <div
+    class="pointer-events-none absolute -right-52 bottom-20 h-[480px] w-[480px] rounded-full bg-purple-600/15 blur-3xl"
+  ></div>
+
+  <div
+    class="pointer-events-none absolute left-1/2 top-1/3 h-72 w-72 -translate-x-1/2 rounded-full bg-cyan-500/10 blur-3xl"
+  ></div>
+
+
+  <!-- Subtle grid background -->
+
+  <div
+    class="pointer-events-none absolute inset-0 opacity-[0.025]"
+    style="
+      background-image:
+        linear-gradient(rgba(255, 255, 255, 0.7) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.7) 1px, transparent 1px);
+      background-size: 55px 55px;
+    "
+  ></div>
+
+
+  <div class="relative z-10 mx-auto max-w-7xl">
+
+
+    <!-- ======================================================== -->
+    <!-- SECTION HEADING                                         -->
+    <!-- ======================================================== -->
+
+    <div class="mx-auto mb-14 max-w-3xl text-center md:mb-16">
+
+      <div
+        class="mb-5 inline-flex items-center gap-2 rounded-full border border-cyan-400/25 bg-cyan-400/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.2em] text-cyan-300 shadow-lg shadow-black/10 backdrop-blur-md"
+      >
+        <i class="fa-solid fa-layer-group"></i>
+        <span>My Skills</span>
+      </div>
+
+      <h2
+        class="text-4xl font-extrabold leading-[1.12] tracking-tight text-white sm:text-5xl lg:text-6xl"
+      >
+        Skills Behind My
+
+        <span
+          class="mt-2 block bg-gradient-to-r from-blue-400 via-cyan-300 to-blue-500 bg-clip-text text-transparent"
+        >
+          AI &amp; Full-Stack Projects
+        </span>
       </h2>
 
-      <div class="w-20 h-1 bg-blue-700 mx-auto mt-3 rounded-full"></div>
-
-      <p class="mt-6 text-gray-600 max-w-2xl mx-auto">
-        Here are some of the technologies, tools, and concepts I am currently
-        learning and using to build modern web applications and AI-powered solutions.
+      <p
+        class="mx-auto mt-6 max-w-2xl text-base leading-8 text-gray-400 sm:text-lg"
+      >
+        These are the technical, creative and documentation skills I use while
+        developing websites, AI-assisted products, digital content and
+        project demonstrations.
       </p>
+
     </div>
 
-    <!-- SKILLS GRID -->
-    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
 
-      <!-- FRONTEND -->
+    <!-- ======================================================== -->
+    <!-- TECHNICAL OVERVIEW PANEL                                -->
+    <!-- ======================================================== -->
+
+    <div
+      class="mb-10 grid overflow-hidden rounded-3xl border border-white/10 bg-white/[0.045] shadow-2xl shadow-black/20 backdrop-blur-xl lg:grid-cols-[1.1fr_0.9fr]"
+    >
+
+      <!-- Overview content -->
+
+      <div class="p-6 sm:p-8 lg:p-10">
+
+        <p
+          class="text-sm font-bold uppercase tracking-[0.2em] text-cyan-400"
+        >
+          Technical Direction
+        </p>
+
+        <h3
+          class="mt-4 text-2xl font-extrabold leading-tight text-white sm:text-3xl"
+        >
+          Building intelligent digital products from idea to deployment
+        </h3>
+
+        <p class="mt-5 max-w-2xl text-base leading-8 text-gray-400">
+          My skills combine frontend development, JavaScript, artificial
+          intelligence, machine learning fundamentals, content production and
+          software documentation. I apply them while creating products that
+          can be presented through clear project descriptions and short video
+          demonstrations.
+        </p>
+
+
+        <!-- Overview tags -->
+
+        <div class="mt-7 flex flex-wrap gap-3">
+
+          <span
+            class="inline-flex items-center gap-2 rounded-full border border-blue-400/20 bg-blue-500/10 px-4 py-2 text-sm font-semibold text-blue-300"
+          >
+            <i class="fa-solid fa-code"></i>
+            Frontend Development
+          </span>
+
+          <span
+            class="inline-flex items-center gap-2 rounded-full border border-purple-400/20 bg-purple-500/10 px-4 py-2 text-sm font-semibold text-purple-300"
+          >
+            <i class="fa-solid fa-robot"></i>
+            Artificial Intelligence
+          </span>
+
+          <span
+            class="inline-flex items-center gap-2 rounded-full border border-cyan-400/20 bg-cyan-500/10 px-4 py-2 text-sm font-semibold text-cyan-300"
+          >
+            <i class="fa-solid fa-brain"></i>
+            Machine Learning Fundamentals
+          </span>
+
+          <span
+            class="inline-flex items-center gap-2 rounded-full border border-emerald-400/20 bg-emerald-500/10 px-4 py-2 text-sm font-semibold text-emerald-300"
+          >
+            <i class="fa-solid fa-file-lines"></i>
+            Documentation
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <!-- Visual side -->
+
       <div
-        class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300"
+        class="relative flex min-h-[280px] items-center justify-center overflow-hidden border-t border-white/10 bg-[#0b1d35]/80 p-8 lg:border-l lg:border-t-0"
       >
-        <div class="text-4xl text-[#0b1f3a] mb-4">
+
+        <div
+          class="pointer-events-none absolute h-64 w-64 rounded-full bg-blue-600/20 blur-3xl"
+        ></div>
+
+        <div class="relative">
+
+          <div
+            class="flex h-40 w-40 items-center justify-center rounded-full border border-cyan-400/20 bg-cyan-500/10 shadow-2xl shadow-blue-950/40 backdrop-blur-xl sm:h-48 sm:w-48"
+          >
+
+            <div
+              class="flex h-24 w-24 items-center justify-center rounded-3xl bg-gradient-to-br from-blue-600 to-cyan-500 text-5xl text-white shadow-xl shadow-blue-950/40 sm:h-28 sm:w-28 sm:text-6xl"
+            >
+              <i class="fa-solid fa-laptop-code"></i>
+            </div>
+
+          </div>
+
+
+          <!-- Floating icons -->
+
+          <div
+            class="absolute -left-8 top-3 flex h-14 w-14 items-center justify-center rounded-2xl border border-orange-400/20 bg-[#0d213d] text-2xl text-orange-400 shadow-xl shadow-black/30"
+          >
+            <i class="fa-brands fa-html5"></i>
+          </div>
+
+          <div
+            class="absolute -right-8 top-8 flex h-14 w-14 items-center justify-center rounded-2xl border border-yellow-400/20 bg-[#0d213d] text-2xl text-yellow-300 shadow-xl shadow-black/30"
+          >
+            <i class="fa-brands fa-js"></i>
+          </div>
+
+          <div
+            class="absolute -bottom-5 left-2 flex h-14 w-14 items-center justify-center rounded-2xl border border-purple-400/20 bg-[#0d213d] text-2xl text-purple-400 shadow-xl shadow-black/30"
+          >
+            <i class="fa-solid fa-robot"></i>
+          </div>
+
+          <div
+            class="absolute -bottom-2 -right-5 flex h-14 w-14 items-center justify-center rounded-2xl border border-emerald-400/20 bg-[#0d213d] text-2xl text-emerald-400 shadow-xl shadow-black/30"
+          >
+            <i class="fa-solid fa-file-pen"></i>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- ======================================================== -->
+    <!-- MAIN SKILL CARDS                                        -->
+    <!-- ======================================================== -->
+
+    <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+
+
+      <!-- ====================================================== -->
+      <!-- 01 FRONTEND DEVELOPMENT                               -->
+      <!-- ====================================================== -->
+
+      <article
+        class="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.045] p-6 shadow-xl shadow-black/20 backdrop-blur-xl transition duration-300 hover:-translate-y-2 hover:border-blue-400/40 hover:bg-white/[0.07] hover:shadow-2xl sm:p-7"
+      >
+
+        <div
+          class="pointer-events-none absolute -right-14 -top-14 h-36 w-36 rounded-full bg-blue-600/15 blur-2xl transition duration-300 group-hover:bg-blue-600/25"
+        ></div>
+
+        <div class="relative flex items-center justify-between gap-4">
+
+          <span
+            class="text-sm font-extrabold uppercase tracking-[0.2em] text-blue-400"
+          >
+            01
+          </span>
+
+          <span
+            class="rounded-full border border-emerald-400/20 bg-emerald-500/10 px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-emerald-300"
+          >
+            In Use
+          </span>
+
+        </div>
+
+        <div
+          class="relative mt-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-500/15 text-2xl text-blue-400 transition duration-300 group-hover:bg-blue-600 group-hover:text-white"
+        >
           <i class="fa-solid fa-code"></i>
         </div>
 
-        <h3 class="text-xl font-semibold text-[#0b1f3a] mb-3">
+        <h3 class="relative mt-6 text-xl font-extrabold text-white">
           Frontend Development
         </h3>
 
-        <ul class="space-y-2 text-gray-600">
-          <li>HTML5</li>
-          <li>CSS3</li>
-          <li>Tailwind CSS</li>
-          <li>Responsive Design</li>
-        </ul>
-      </div>
+        <p class="relative mt-3 text-sm leading-7 text-gray-400">
+          Creating responsive and visually organised interfaces for websites,
+          digital products and project presentations.
+        </p>
 
-      <!-- PROGRAMMING -->
-      <div
-        class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300"
+        <ul class="relative mt-6 space-y-3">
+
+          <li class="flex items-center gap-3 text-sm text-gray-300">
+            <span
+              class="flex h-7 w-7 items-center justify-center rounded-lg bg-blue-500/10 text-xs text-blue-400"
+            >
+              <i class="fa-brands fa-html5"></i>
+            </span>
+            HTML5
+          </li>
+
+          <li class="flex items-center gap-3 text-sm text-gray-300">
+            <span
+              class="flex h-7 w-7 items-center justify-center rounded-lg bg-blue-500/10 text-xs text-blue-400"
+            >
+              <i class="fa-brands fa-css3-alt"></i>
+            </span>
+            CSS3
+          </li>
+
+          <li class="flex items-center gap-3 text-sm text-gray-300">
+            <span
+              class="flex h-7 w-7 items-center justify-center rounded-lg bg-blue-500/10 text-xs text-blue-400"
+            >
+              <i class="fa-solid fa-wind"></i>
+            </span>
+            Tailwind CSS
+          </li>
+
+          <li class="flex items-center gap-3 text-sm text-gray-300">
+            <span
+              class="flex h-7 w-7 items-center justify-center rounded-lg bg-blue-500/10 text-xs text-blue-400"
+            >
+              <i class="fa-solid fa-mobile-screen-button"></i>
+            </span>
+            Responsive Design
+          </li>
+
+        </ul>
+
+      </article>
+
+
+      <!-- ====================================================== -->
+      <!-- 02 JAVASCRIPT PROGRAMMING                             -->
+      <!-- ====================================================== -->
+
+      <article
+        class="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.045] p-6 shadow-xl shadow-black/20 backdrop-blur-xl transition duration-300 hover:-translate-y-2 hover:border-cyan-400/40 hover:bg-white/[0.07] hover:shadow-2xl sm:p-7"
       >
-        <div class="text-4xl text-[#0b1f3a] mb-4">
-          <i class="fa-solid fa-laptop-code"></i>
+
+        <div
+          class="pointer-events-none absolute -right-14 -top-14 h-36 w-36 rounded-full bg-cyan-500/15 blur-2xl transition duration-300 group-hover:bg-cyan-500/25"
+        ></div>
+
+        <div class="relative flex items-center justify-between gap-4">
+
+          <span
+            class="text-sm font-extrabold uppercase tracking-[0.2em] text-cyan-400"
+          >
+            02
+          </span>
+
+          <span
+            class="rounded-full border border-cyan-400/20 bg-cyan-500/10 px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-cyan-300"
+          >
+            Growing
+          </span>
+
         </div>
 
-        <h3 class="text-xl font-semibold text-[#0b1f3a] mb-3">
-          Programming
+        <div
+          class="relative mt-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-cyan-500/15 text-2xl text-cyan-400 transition duration-300 group-hover:bg-cyan-500 group-hover:text-white"
+        >
+          <i class="fa-brands fa-js"></i>
+        </div>
+
+        <h3 class="relative mt-6 text-xl font-extrabold text-white">
+          JavaScript Programming
         </h3>
 
-        <ul class="space-y-2 text-gray-600">
-          <li>JavaScript</li>
-          <li>Problem Solving</li>
-          <li>DOM Manipulation</li>
-          <li>Basic Debugging</li>
-        </ul>
-      </div>
+        <p class="relative mt-3 text-sm leading-7 text-gray-400">
+          Adding interaction, logic and useful behaviour to web pages and
+          frontend applications.
+        </p>
 
-      <!-- AI -->
-      <div
-        class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300"
+        <ul class="relative mt-6 space-y-3">
+
+          <li class="flex items-center gap-3 text-sm text-gray-300">
+            <span
+              class="flex h-7 w-7 items-center justify-center rounded-lg bg-cyan-500/10 text-xs text-cyan-400"
+            >
+              <i class="fa-solid fa-code-branch"></i>
+            </span>
+            Control Flow and Logic
+          </li>
+
+          <li class="flex items-center gap-3 text-sm text-gray-300">
+            <span
+              class="flex h-7 w-7 items-center justify-center rounded-lg bg-cyan-500/10 text-xs text-cyan-400"
+            >
+              <i class="fa-solid fa-repeat"></i>
+            </span>
+            Functions and Loops
+          </li>
+
+          <li class="flex items-center gap-3 text-sm text-gray-300">
+            <span
+              class="flex h-7 w-7 items-center justify-center rounded-lg bg-cyan-500/10 text-xs text-cyan-400"
+            >
+              <i class="fa-solid fa-sitemap"></i>
+            </span>
+            DOM Manipulation
+          </li>
+
+          <li class="flex items-center gap-3 text-sm text-gray-300">
+            <span
+              class="flex h-7 w-7 items-center justify-center rounded-lg bg-cyan-500/10 text-xs text-cyan-400"
+            >
+              <i class="fa-solid fa-bug"></i>
+            </span>
+            Debugging Fundamentals
+          </li>
+
+        </ul>
+
+      </article>
+
+
+      <!-- ====================================================== -->
+      <!-- 03 AI AND PROMPT ENGINEERING                          -->
+      <!-- ====================================================== -->
+
+      <article
+        class="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.045] p-6 shadow-xl shadow-black/20 backdrop-blur-xl transition duration-300 hover:-translate-y-2 hover:border-purple-400/40 hover:bg-white/[0.07] hover:shadow-2xl sm:p-7"
       >
-        <div class="text-4xl text-[#0b1f3a] mb-4">
+
+        <div
+          class="pointer-events-none absolute -right-14 -top-14 h-36 w-36 rounded-full bg-purple-600/15 blur-2xl transition duration-300 group-hover:bg-purple-600/25"
+        ></div>
+
+        <div class="relative flex items-center justify-between gap-4">
+
+          <span
+            class="text-sm font-extrabold uppercase tracking-[0.2em] text-purple-400"
+          >
+            03
+          </span>
+
+          <span
+            class="rounded-full border border-purple-400/20 bg-purple-500/10 px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-purple-300"
+          >
+            Applied
+          </span>
+
+        </div>
+
+        <div
+          class="relative mt-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-purple-500/15 text-2xl text-purple-400 transition duration-300 group-hover:bg-purple-600 group-hover:text-white"
+        >
           <i class="fa-solid fa-robot"></i>
         </div>
 
-        <h3 class="text-xl font-semibold text-[#0b1f3a] mb-3">
-          AI & Prompt Engineering
+        <h3 class="relative mt-6 text-xl font-extrabold text-white">
+          AI &amp; Prompt Engineering
         </h3>
 
-        <ul class="space-y-2 text-gray-600">
-          <li>Prompt Engineering</li>
-          <li>AI-Assisted Development</li>
-          <li>Tokenization Concepts</li>
-          <li>Workflow Optimization</li>
-        </ul>
-      </div>
+        <p class="relative mt-3 text-sm leading-7 text-gray-400">
+          Using AI tools and structured prompts to support research, writing,
+          script generation, translation and digital production.
+        </p>
 
-      <!-- TOOLS -->
-      <div
-        class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300"
+        <ul class="relative mt-6 space-y-3">
+
+          <li class="flex items-center gap-3 text-sm text-gray-300">
+            <span
+              class="flex h-7 w-7 items-center justify-center rounded-lg bg-purple-500/10 text-xs text-purple-400"
+            >
+              <i class="fa-solid fa-message"></i>
+            </span>
+            Prompt Engineering
+          </li>
+
+          <li class="flex items-center gap-3 text-sm text-gray-300">
+            <span
+              class="flex h-7 w-7 items-center justify-center rounded-lg bg-purple-500/10 text-xs text-purple-400"
+            >
+              <i class="fa-solid fa-pen-nib"></i>
+            </span>
+            AI-Assisted Writing
+          </li>
+
+          <li class="flex items-center gap-3 text-sm text-gray-300">
+            <span
+              class="flex h-7 w-7 items-center justify-center rounded-lg bg-purple-500/10 text-xs text-purple-400"
+            >
+              <i class="fa-solid fa-microphone-lines"></i>
+            </span>
+            Podcast Script Generation
+          </li>
+
+          <li class="flex items-center gap-3 text-sm text-gray-300">
+            <span
+              class="flex h-7 w-7 items-center justify-center rounded-lg bg-purple-500/10 text-xs text-purple-400"
+            >
+              <i class="fa-solid fa-video"></i>
+            </span>
+            Video Script Creation
+          </li>
+
+        </ul>
+
+      </article>
+
+
+      <!-- ====================================================== -->
+      <!-- 04 DATA, LANGUAGE AND SENTIMENT                        -->
+      <!-- ====================================================== -->
+
+      <article
+        class="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.045] p-6 shadow-xl shadow-black/20 backdrop-blur-xl transition duration-300 hover:-translate-y-2 hover:border-orange-400/40 hover:bg-white/[0.07] hover:shadow-2xl sm:p-7"
       >
-        <div class="text-4xl text-[#0b1f3a] mb-4">
-          <i class="fa-solid fa-screwdriver-wrench"></i>
+
+        <div
+          class="pointer-events-none absolute -right-14 -top-14 h-36 w-36 rounded-full bg-orange-500/15 blur-2xl transition duration-300 group-hover:bg-orange-500/25"
+        ></div>
+
+        <div class="relative flex items-center justify-between gap-4">
+
+          <span
+            class="text-sm font-extrabold uppercase tracking-[0.2em] text-orange-400"
+          >
+            04
+          </span>
+
+          <span
+            class="rounded-full border border-orange-400/20 bg-orange-500/10 px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-orange-300"
+          >
+            Project-Based
+          </span>
+
         </div>
 
-        <h3 class="text-xl font-semibold text-[#0b1f3a] mb-3">
-          Tools & Technologies
+        <div
+          class="relative mt-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-orange-500/15 text-2xl text-orange-400 transition duration-300 group-hover:bg-orange-500 group-hover:text-white"
+        >
+          <i class="fa-solid fa-chart-column"></i>
+        </div>
+
+        <h3 class="relative mt-6 text-xl font-extrabold text-white">
+          Data &amp; Language Applications
         </h3>
 
-        <ul class="space-y-2 text-gray-600">
-          <li>VS Code</li>
-          <li>Git (Learning)</li>
-          <li>Microsoft Excel</li>
-          <li>Different LLMs</li>
+        <p class="relative mt-3 text-sm leading-7 text-gray-400">
+          Organising language-based data and applying AI-assisted workflows to
+          translation and customer-feedback analysis.
+        </p>
+
+        <ul class="relative mt-6 space-y-3">
+
+          <li class="flex items-center gap-3 text-sm text-gray-300">
+            <span
+              class="flex h-7 w-7 items-center justify-center rounded-lg bg-orange-500/10 text-xs text-orange-400"
+            >
+              <i class="fa-solid fa-chart-line"></i>
+            </span>
+            Sentiment Analysis
+          </li>
+
+          <li class="flex items-center gap-3 text-sm text-gray-300">
+            <span
+              class="flex h-7 w-7 items-center justify-center rounded-lg bg-orange-500/10 text-xs text-orange-400"
+            >
+              <i class="fa-solid fa-language"></i>
+            </span>
+            Translation Workflows
+          </li>
+
+          <li class="flex items-center gap-3 text-sm text-gray-300">
+            <span
+              class="flex h-7 w-7 items-center justify-center rounded-lg bg-orange-500/10 text-xs text-orange-400"
+            >
+              <i class="fa-solid fa-table"></i>
+            </span>
+            Data Organisation
+          </li>
+
+          <li class="flex items-center gap-3 text-sm text-gray-300">
+            <span
+              class="flex h-7 w-7 items-center justify-center rounded-lg bg-orange-500/10 text-xs text-orange-400"
+            >
+              <i class="fa-solid fa-file-excel"></i>
+            </span>
+            Microsoft Excel
+          </li>
+
         </ul>
+
+      </article>
+
+
+      <!-- ====================================================== -->
+      <!-- 05 MACHINE LEARNING                                   -->
+      <!-- ====================================================== -->
+
+      <article
+        class="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.045] p-6 shadow-xl shadow-black/20 backdrop-blur-xl transition duration-300 hover:-translate-y-2 hover:border-pink-400/40 hover:bg-white/[0.07] hover:shadow-2xl sm:p-7"
+      >
+
+        <div
+          class="pointer-events-none absolute -right-14 -top-14 h-36 w-36 rounded-full bg-pink-500/15 blur-2xl transition duration-300 group-hover:bg-pink-500/25"
+        ></div>
+
+        <div class="relative flex items-center justify-between gap-4">
+
+          <span
+            class="text-sm font-extrabold uppercase tracking-[0.2em] text-pink-400"
+          >
+            05
+          </span>
+
+          <span
+            class="rounded-full border border-pink-400/20 bg-pink-500/10 px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-pink-300"
+          >
+            Currently Learning
+          </span>
+
+        </div>
+
+        <div
+          class="relative mt-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-pink-500/15 text-2xl text-pink-400 transition duration-300 group-hover:bg-pink-500 group-hover:text-white"
+        >
+          <i class="fa-solid fa-brain"></i>
+        </div>
+
+        <h3 class="relative mt-6 text-xl font-extrabold text-white">
+          Machine Learning Fundamentals
+        </h3>
+
+        <p class="relative mt-3 text-sm leading-7 text-gray-400">
+          Developing a foundation in how data is prepared, models are trained
+          and machine-learning systems make predictions.
+        </p>
+
+        <ul class="relative mt-6 space-y-3">
+
+          <li class="flex items-center gap-3 text-sm text-gray-300">
+            <span
+              class="flex h-7 w-7 items-center justify-center rounded-lg bg-pink-500/10 text-xs text-pink-400"
+            >
+              <i class="fa-solid fa-book-open"></i>
+            </span>
+            Machine Learning Fundamentals
+          </li>
+
+          <li class="flex items-center gap-3 text-sm text-gray-300">
+            <span
+              class="flex h-7 w-7 items-center justify-center rounded-lg bg-pink-500/10 text-xs text-pink-400"
+            >
+              <i class="fa-solid fa-database"></i>
+            </span>
+            Data Preparation Concepts
+          </li>
+
+          <li class="flex items-center gap-3 text-sm text-gray-300">
+            <span
+              class="flex h-7 w-7 items-center justify-center rounded-lg bg-pink-500/10 text-xs text-pink-400"
+            >
+              <i class="fa-solid fa-diagram-project"></i>
+            </span>
+            Supervised Learning Concepts
+          </li>
+
+          <li class="flex items-center gap-3 text-sm text-gray-300">
+            <span
+              class="flex h-7 w-7 items-center justify-center rounded-lg bg-pink-500/10 text-xs text-pink-400"
+            >
+              <i class="fa-solid fa-gears"></i>
+            </span>
+            Model Training Concepts
+          </li>
+
+        </ul>
+
+      </article>
+
+
+      <!-- ====================================================== -->
+      <!-- 06 SOFTWARE DOCUMENTATION                             -->
+      <!-- ====================================================== -->
+
+      <article
+        class="group relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.045] p-6 shadow-xl shadow-black/20 backdrop-blur-xl transition duration-300 hover:-translate-y-2 hover:border-emerald-400/40 hover:bg-white/[0.07] hover:shadow-2xl sm:p-7"
+      >
+
+        <div
+          class="pointer-events-none absolute -right-14 -top-14 h-36 w-36 rounded-full bg-emerald-500/15 blur-2xl transition duration-300 group-hover:bg-emerald-500/25"
+        ></div>
+
+        <div class="relative flex items-center justify-between gap-4">
+
+          <span
+            class="text-sm font-extrabold uppercase tracking-[0.2em] text-emerald-400"
+          >
+            06
+          </span>
+
+          <span
+            class="rounded-full border border-emerald-400/20 bg-emerald-500/10 px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-emerald-300"
+          >
+            In Progress
+          </span>
+
+        </div>
+
+        <div
+          class="relative mt-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-emerald-500/15 text-2xl text-emerald-400 transition duration-300 group-hover:bg-emerald-500 group-hover:text-white"
+        >
+          <i class="fa-solid fa-file-lines"></i>
+        </div>
+
+        <h3 class="relative mt-6 text-xl font-extrabold text-white">
+          Software Documentation
+        </h3>
+
+        <p class="relative mt-3 text-sm leading-7 text-gray-400">
+          Learning how to explain software products, processes and technical
+          information in a clear and structured manner.
+        </p>
+
+        <ul class="relative mt-6 space-y-3">
+
+          <li class="flex items-center gap-3 text-sm text-gray-300">
+            <span
+              class="flex h-7 w-7 items-center justify-center rounded-lg bg-emerald-500/10 text-xs text-emerald-400"
+            >
+              <i class="fa-solid fa-book"></i>
+            </span>
+            Technical Documentation
+          </li>
+
+          <li class="flex items-center gap-3 text-sm text-gray-300">
+            <span
+              class="flex h-7 w-7 items-center justify-center rounded-lg bg-emerald-500/10 text-xs text-emerald-400"
+            >
+              <i class="fa-solid fa-person-chalkboard"></i>
+            </span>
+            User Guides
+          </li>
+
+          <li class="flex items-center gap-3 text-sm text-gray-300">
+            <span
+              class="flex h-7 w-7 items-center justify-center rounded-lg bg-emerald-500/10 text-xs text-emerald-400"
+            >
+              <i class="fa-solid fa-list-check"></i>
+            </span>
+            Process Documentation
+          </li>
+
+          <li class="flex items-center gap-3 text-sm text-gray-300">
+            <span
+              class="flex h-7 w-7 items-center justify-center rounded-lg bg-emerald-500/10 text-xs text-emerald-400"
+            >
+              <i class="fa-brands fa-readme"></i>
+            </span>
+            README Writing
+          </li>
+
+        </ul>
+
+      </article>
+
+    </div>
+
+
+    <!-- ======================================================== -->
+    <!-- DEVELOPMENT TOOLS STRIP                                 -->
+    <!-- ======================================================== -->
+
+    <div
+      class="mt-10 rounded-3xl border border-white/10 bg-white/[0.045] p-6 shadow-xl shadow-black/20 backdrop-blur-xl sm:p-8"
+    >
+
+      <div class="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
+
+        <div class="max-w-xl">
+
+          <p
+            class="text-xs font-bold uppercase tracking-[0.2em] text-cyan-400"
+          >
+            Development Toolkit
+          </p>
+
+          <h3 class="mt-2 text-2xl font-extrabold text-white">
+            Tools supporting my projects and workflow
+          </h3>
+
+          <p class="mt-3 text-sm leading-7 text-gray-400">
+            I use these tools for coding, content development, collaboration,
+            data organisation, documentation and project presentation.
+          </p>
+
+        </div>
+
+
+        <div class="flex flex-wrap gap-3 lg:max-w-2xl lg:justify-end">
+
+          <span
+            class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-semibold text-gray-300"
+          >
+            <i class="fa-solid fa-code text-blue-400"></i>
+            VS Code
+          </span>
+
+          <span
+            class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-semibold text-gray-300"
+          >
+            <i class="fa-brands fa-git-alt text-orange-400"></i>
+            Git
+          </span>
+
+          <span
+            class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-semibold text-gray-300"
+          >
+            <i class="fa-brands fa-github text-white"></i>
+            GitHub
+          </span>
+
+          <span
+            class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-semibold text-gray-300"
+          >
+            <i class="fa-solid fa-file-word text-blue-400"></i>
+            Microsoft Word
+          </span>
+
+          <span
+            class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-semibold text-gray-300"
+          >
+            <i class="fa-solid fa-file-excel text-emerald-400"></i>
+            Microsoft Excel
+          </span>
+
+          <span
+            class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-semibold text-gray-300"
+          >
+            <i class="fa-solid fa-comments text-purple-400"></i>
+             AI Tools (ChatGPT • Claude • Gemini • Grok • DeepSeek)
+          </span>
+
+        </div>
+
       </div>
 
     </div>
 
-  </div>
-</section>
 
-<!-- ================= PROJECTS SECTION ================= -->
-<section
-  id="projects"
-  class="py-20 px-6 md:px-12 bg-white"
->
-  <div class="max-w-7xl mx-auto">
+    <!-- ======================================================== -->
+    <!-- PROJECT CONNECTION PANEL                                -->
+    <!-- ======================================================== -->
 
-    <!-- SECTION TITLE -->
-    <div class="text-center mb-12">
-      <h2 class="text-3xl md:text-4xl font-bold text-[#0b1f3a]">
-        Projects
-      </h2>
+    <div
+      class="mt-10 overflow-hidden rounded-3xl border border-blue-400/15 bg-gradient-to-r from-blue-500/10 via-purple-500/10 to-cyan-500/10 p-6 shadow-xl shadow-black/20 backdrop-blur-xl sm:p-8 lg:flex lg:items-center lg:justify-between lg:gap-10"
+    >
 
-      <div class="w-20 h-1 bg-blue-700 mx-auto mt-3 rounded-full"></div>
+      <div class="max-w-3xl">
 
-      <p class="mt-6 text-gray-600 max-w-2xl mx-auto">
-        Below are projects completed during my learning program, showing
-        problem-solving, design thinking, coding implementation, and final delivery.
-      </p>
-    </div>
+        <div class="flex items-start gap-4">
 
-    <!-- PROJECT CARDS -->
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            class="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-blue-500/15 text-xl text-blue-400"
+          >
+            <i class="fa-solid fa-circle-play"></i>
+          </div>
 
-      <!-- PROJECT 1 -->
-      <article class="bg-gray-50 rounded-xl shadow-md p-6 hover:shadow-xl hover:-translate-y-1 transition duration-300">
+          <div>
 
-        <h3 class="text-xl font-bold text-[#0b1f3a] mb-4">
-          MamaPutOnline
-        </h3>
+            <p
+              class="text-xs font-bold uppercase tracking-[0.2em] text-blue-300"
+            >
+              Skills in Practice
+            </p>
 
-        <div class="space-y-3 text-gray-600">
-
-          <p>
-            <strong>Problem Solved:</strong>
-            Many people struggle to access freshly prepared Nigerian meals conveniently,
-            especially when away from home.
-          </p>
-
-          <p>
-            <strong>Design Phase:</strong>
-            Designed a clean, mobile-first food ordering interface focused on usability and simplicity.
-          </p>
-
-          <p>
-            <strong>Coding Phase:</strong>
-            Built responsive UI using HTML, CSS, and JavaScript.
-          </p>
-
-          <p>
-            <strong>Delivery Phase:</strong>
-            Delivered a functional prototype for browsing and ordering meals online.
-          </p>
-
-        </div>
-      </article>
-
-      <!-- PROJECT 2 -->
-      <article class="bg-gray-50 rounded-xl shadow-md p-6 hover:shadow-xl hover:-translate-y-1 transition duration-300">
-
-        <h3 class="text-xl font-bold text-[#0b1f3a] mb-4">
-          AI Tokenization Project
-        </h3>
-
-        <div class="space-y-3 text-gray-600">
-
-          <p>
-            <strong>Problem Solved:</strong>
-            Raw text data must be structured before it can be used in AI and NLP models.
-          </p>
-
-          <p>
-            <strong>Design Phase:</strong>
-            Planned structured token datasets including words, entities, and classifications.
-          </p>
-
-          <p>
-            <strong>Coding Phase:</strong>
-            Applied tokenization concepts and organized datasets for AI processing.
-          </p>
-
-          <p>
-            <strong>Delivery Phase:</strong>
-            Produced clean structured data ready for machine learning tasks.
-          </p>
-
-        </div>
-      </article>
-
-      <!-- PROJECT 3 -->
-      <article class="bg-gray-50 rounded-xl shadow-md p-6 hover:shadow-xl hover:-translate-y-1 transition duration-300">
-
-        <h3 class="text-xl font-bold text-[#0b1f3a] mb-4">
-          Personal Portfolio Website
-        </h3>
-
-        <div class="space-y-3 text-gray-600">
-
-          <p>
-            <strong>Problem Solved:</strong>
-            Developers need a professional platform to showcase skills, projects, and learning progress.
-          </p>
-
-          <p>
-            <strong>Design Phase:</strong>
-            Designed a modern responsive layout with clear sections and navigation.
-          </p>
-
-          <p>
-            <strong>Coding Phase:</strong>
-            Built using HTML, Tailwind CSS, JavaScript, and prompt engineering techniques.
-          </p>
-
-          <p>
-            <strong>Delivery Phase:</strong>
-            Delivered a fully responsive portfolio website showcasing development skills.
-          </p>
-
-        </div>
-      </article>
-
-    </div>
-
-  </div>
-</section>
-
-
-<!-- ================= CONTACT SECTION ================= -->
-<section
-  id="contact"
-  class="py-20 px-6 md:px-12 bg-gray-50"
->
-  <div class="max-w-7xl mx-auto">
-
-    <!-- TITLE -->
-    <div class="text-center mb-12">
-      <h2 class="text-3xl md:text-4xl font-bold text-[#0b1f3a]">
-        Contact Me
-      </h2>
-
-      <div class="w-20 h-1 bg-blue-700 mx-auto mt-3 rounded-full"></div>
-
-      <p class="mt-6 text-gray-600 max-w-2xl mx-auto">
-        Feel free to reach out for collaborations, opportunities, or any inquiries.
-        I am always open to learning and working on exciting projects.
-      </p>
-    </div>
-
-    <!-- CONTENT GRID -->
-    <div class="grid md:grid-cols-2 gap-10 items-start">
-
-      <!-- CONTACT FORM -->
-      <form class="bg-white p-8 rounded-xl shadow-md space-y-5">
-
-        <div>
-          <label class="block text-gray-700 mb-2">Full Name</label>
-          <input
-            type="text"
-            placeholder="Enter your name"
-            class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-700"
-          />
-        </div>
-
-        <div>
-          <label class="block text-gray-700 mb-2">Email Address</label>
-          <input
-            type="email"
-            placeholder="Enter your email"
-            class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-700"
-          />
-        </div>
-
-        <div>
-          <label class="block text-gray-700 mb-2">Message</label>
-          <textarea
-            rows="5"
-            placeholder="Write your message..."
-            class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-700"
-          ></textarea>
-        </div>
-
-        <button
-          type="submit"
-          class="w-full bg-[#0b1f3a] text-white py-3 rounded-lg hover:bg-blue-900 transition duration-300"
-        >
-          Send Message
-        </button>
-
-      </form>
-
-      <!-- CONTACT INFO -->
-      <div class="space-y-8">
-
-        <!-- EMAIL -->
-        <div class="bg-white p-6 rounded-xl shadow-md">
-          <h3 class="text-lg font-semibold text-[#0b1f3a] mb-2">
-            Email
-          </h3>
-          <p class="text-gray-600">Chuksnwani3@gmail.com</p>
-        </div>
-
-        <!-- SOCIAL LINKS -->
-        <div class="bg-white p-6 rounded-xl shadow-md">
-          <h3 class="text-lg font-semibold text-[#0b1f3a] mb-4">
-            Social Links
-          </h3>
-
-          <div class="flex gap-4 text-2xl text-[#0b1f3a]">
-
-            <a href="#" class="hover:text-blue-700 transition">
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
-
-            <a href="#" class="hover:text-blue-700 transition">
-              <i class="fa-brands fa-github"></i>
-            </a>
-
-            <a href="#" class="hover:text-blue-700 transition">
-              <i class="fa-brands fa-twitter"></i>
-            </a>
+            <h3 class="mt-1 text-xl font-extrabold text-white sm:text-2xl">
+              See how these skills were applied to real AI and web projects
+            </h3>
 
           </div>
+
         </div>
+
+        <p class="mt-5 text-sm leading-7 text-gray-400 sm:text-base">
+          The next section presents my e-book, podcast, blog, translation,
+          sentiment-analysis and full-stack projects through short video cards
+          and supporting project information.
+        </p>
 
       </div>
 
+      <a
+        href="#projects"
+        class="group mt-7 inline-flex w-full shrink-0 items-center justify-center gap-3 rounded-xl bg-gradient-to-r from-blue-600 to-cyan-500 px-7 py-4 font-bold text-white shadow-xl shadow-blue-950/40 transition duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-blue-900/50 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-offset-2 focus:ring-offset-[#061426] sm:w-auto lg:mt-0"
+      >
+        Explore My Projects
+
+        <i
+          class="fa-solid fa-arrow-right transition duration-300 group-hover:translate-x-1"
+        ></i>
+      </a>
 
     </div>
 
@@ -550,68 +2231,1346 @@
 
 </section>
 
+<!-- ============================================================ -->
+<!-- ============================================================ -->
+<!--               ASSIGNMENT-FOCUSED SKILLS END                  -->
+<!-- ============================================================ -->
+
+<!-- ============================================================ -->
+<!--                     PROJECTS SECTION                         -->
+<!-- ============================================================ -->
+
+
+
+<section
+    id="projects"
+    class="relative scroll-mt-24 overflow-hidden bg-[#07182c] px-5 py-20 text-white sm:px-6 sm:py-24 md:px-10 md:py-28 lg:px-12 lg:py-32"
+>
+
+    <!-- Decorative background glow -->
+    <div
+        class="pointer-events-none absolute -left-52 top-24 h-[500px] w-[500px] rounded-full bg-purple-600/15 blur-3xl"
+    ></div>
+
+    <div
+        class="pointer-events-none absolute -right-48 bottom-28 h-[470px] w-[470px] rounded-full bg-blue-600/15 blur-3xl"
+    ></div>
+
+
+    <!-- Main projects container -->
+    <div class="relative z-10 mx-auto max-w-7xl">
+
+        <!-- Projects introduction -->
+        <div class="mx-auto mb-16 max-w-3xl text-center">
+
+            <span
+                class="inline-flex items-center gap-2 rounded-full border border-cyan-400/20 bg-cyan-500/10 px-5 py-2 text-sm font-semibold text-cyan-300 backdrop-blur"
+            >
+                <i class="fa-solid fa-folder-open"></i>
+                Featured Projects
+            </span>
+
+            <h2
+                class="mt-6 text-4xl font-extrabold leading-tight text-white md:text-5xl"
+            >
+                Projects Built Through
+
+                <span
+                    class="block bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-500 bg-clip-text text-transparent"
+                >
+                    AI & Frontend Development
+                </span>
+            </h2>
+
+            <p
+                class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-slate-400"
+            >
+                Explore a collection of AI-assisted and frontend projects that
+                demonstrate my ability to solve real-world problems through
+                research, structured prompting, web development, and practical
+                digital solutions.
+            </p>
+
+        </div>
+
+
+        <!-- ==================== AI PROJECTS ==================== -->
+
+        <div class="mb-8 flex items-center gap-4">
+
+            <div class="h-px flex-1 bg-slate-700/60"></div>
+
+            <h3
+                class="flex items-center gap-3 text-2xl font-bold text-cyan-400 md:text-3xl"
+            >
+                <i class="fa-solid fa-robot"></i>
+                AI Projects
+            </h3>
+
+            <div class="h-px flex-1 bg-slate-700/60"></div>
+
+        </div>
+
+
+        <!-- AI project cards grid -->
+        <div class="grid gap-7 md:grid-cols-2 xl:grid-cols-3">
+
+
+            <!-- ==================== CARD 1: CANADA TRAVEL GUIDE ==================== -->
+
+            <article
+                class="overflow-hidden rounded-3xl border border-slate-700/40 bg-white/5 backdrop-blur-lg transition duration-300 hover:-translate-y-2 hover:border-cyan-400/40"
+            >
+
+                <!-- Project image -->
+                <div class="relative h-56 overflow-hidden">
+
+                    <img
+                        src="./assets/images/canada-travel-guide.jpg"
+                        alt="Canada Travel Guide E-book project"
+                        class="h-full w-full object-cover transition duration-500 hover:scale-110"
+                    >
+
+                    <!-- Project video play button -->
+                    <button
+                        type="button"
+                        class="project-play-button absolute inset-0 m-auto flex h-14 w-14 items-center justify-center rounded-full bg-cyan-400 text-xl text-slate-950 shadow-lg transition hover:scale-110"
+                        data-project="canada"
+                        aria-label="Play Canada Travel Guide project video"
+                    >
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+
+                </div>
+
+
+                <!-- Project information -->
+                <div class="space-y-4 p-6">
+
+                    <h3 class="text-2xl font-bold text-white">
+                        Canada Travel Guide
+                    </h3>
+
+                    <p class="text-sm leading-7 text-slate-300">
+                        An evergreen travel guide designed for Amazon KDP,
+                        featuring destination insights, practical travel tips,
+                        and a clean, reader-friendly layout. This project
+                        demonstrates content strategy, AI-assisted writing, and
+                        professional eBook publishing.
+                    </p>
+
+
+                    <!-- Technologies and skills -->
+                    <div class="flex flex-wrap gap-2">
+
+                        <span
+                            class="rounded-full bg-cyan-500/20 px-3 py-1 text-xs font-medium text-cyan-300"
+                        >
+                            AI Writing
+                        </span>
+
+                        <span
+                            class="rounded-full bg-cyan-500/20 px-3 py-1 text-xs font-medium text-cyan-300"
+                        >
+                            Amazon KDP
+                        </span>
+
+                        <span
+                            class="rounded-full bg-cyan-500/20 px-3 py-1 text-xs font-medium text-cyan-300"
+                        >
+                            Content Strategy
+                        </span>
+
+                    </div>
+
+
+                    <!-- Project action buttons -->
+        <div class="flex gap-3 pt-2">
+
+            <!-- Watch Demo -->
+            <button
+                type="button"
+                id="canada-video-btn"
+                class="flex-1 rounded-xl bg-cyan-400 px-4 py-3 font-semibold text-slate-900 transition hover:bg-cyan-300"
+            >
+                <i class="fa-solid fa-circle-play mr-2"></i>
+                Watch Demo
+            </button>
+
+            <!-- View Book -->
+            <a
+                href="https://www.amazon.com/dp/B0H94YTFNQ"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex-1 rounded-xl border border-cyan-400 px-4 py-3 text-center font-semibold text-cyan-300 transition hover:bg-cyan-400 hover:text-slate-900"
+            >
+                <i class="fa-solid fa-book-open mr-2"></i>
+                View Book
+            </a>
+
+        </div>
+                </div>
+
+            </article>
+
+
+            <!-- ==================== CARD 2: AI PODCAST ==================== -->
+
+            <article
+                class="overflow-hidden rounded-3xl border border-slate-700/40 bg-white/5 backdrop-blur-lg transition duration-300 hover:-translate-y-2 hover:border-cyan-400/40"
+            >
+
+                <!-- Project image -->
+                <div class="relative h-56 overflow-hidden">
+
+                    <img
+                        src="./assets/images/ai-podcast.png"
+                        alt="AI Podcast project preview"
+                        class="h-full w-full object-cover transition duration-500 hover:scale-110"
+                    >
+
+                    <!-- Project video play button -->
+                    <button
+                        type="button"
+                        class="project-play-button absolute inset-0 m-auto flex h-14 w-14 items-center justify-center rounded-full bg-cyan-400 text-xl text-slate-950 shadow-lg transition hover:scale-110"
+                        data-project="podcast"
+                        aria-label="Play AI Podcast project video"
+                    >
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+
+                </div>
+
+
+                <!-- Project information -->
+                <div class="space-y-5 p-6">
+
+                    <h3 class="text-2xl font-bold text-white">
+                        AI Podcast
+                    </h3>
+
+                    <p class="text-sm leading-7 text-slate-300">
+                        A short AI-powered video podcast created to communicate
+                        ideas clearly, engage viewers, and demonstrate the use
+                        of artificial intelligence in digital content
+                        production.
+                    </p>
+
+
+                    <!-- Technologies and skills -->
+                    <div class="flex flex-wrap gap-2">
+
+                        <span
+                            class="rounded-full bg-cyan-500/20 px-3 py-1 text-xs font-medium text-cyan-300"
+                        >
+                            AI Content
+                        </span>
+
+                        <span
+                            class="rounded-full bg-cyan-500/20 px-3 py-1 text-xs font-medium text-cyan-300"
+                        >
+                            Script Writing
+                        </span>
+
+                        <span
+                            class="rounded-full bg-cyan-500/20 px-3 py-1 text-xs font-medium text-cyan-300"
+                        >
+                            Video Production
+                        </span>
+
+                    </div>
+
+
+                    <!-- Project action buttons -->
+          <div class="flex gap-3 pt-2">
+
+              <!-- Watch Demo -->
+              <button
+                  type="button"
+                  id="podcast-video-btn"
+                  class="flex-1 rounded-xl bg-cyan-400 px-4 py-3 font-semibold text-slate-900 transition hover:bg-cyan-300"
+              >
+                  <i class="fa-solid fa-circle-play mr-2"></i>
+                  Watch Demo
+              </button>
+
+              <!-- Watch on YouTube -->
+              <a
+                  href="https://www.youtube.com/watch?v=XlOCJoC-Qm0"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="flex-1 rounded-xl border border-cyan-400 px-4 py-3 text-center font-semibold text-cyan-300 transition hover:bg-cyan-400 hover:text-slate-900"
+              >
+                  <i class="fa-brands fa-youtube mr-2"></i>
+                  Watch on YouTube
+              </a>
+
+          </div>
+                </div>
+
+            </article>
+
+
+            <!-- ==================== CARD 3: AI BLOG ==================== -->
+
+            <article
+                class="overflow-hidden rounded-3xl border border-slate-700/40 bg-white/5 backdrop-blur-lg transition duration-300 hover:-translate-y-2 hover:border-cyan-400/40"
+            >
+
+                <!-- Project image -->
+                <div class="relative h-56 overflow-hidden">
+
+                    <img
+                        src="./assets/images/alphe_gist.png"
+                        alt="AI Blog project preview"
+                        class="h-full w-full object-cover transition duration-500 hover:scale-110"
+                    >
+
+                    <!-- Project video play button -->
+                    <button
+                        type="button"
+                        class="project-play-button absolute inset-0 m-auto flex h-14 w-14 items-center justify-center rounded-full bg-cyan-400 text-xl text-slate-950 shadow-lg transition hover:scale-110"
+                        data-project="blog"
+                        aria-label="Play AI Blog project video"
+                    >
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+
+                </div>
+
+
+                <!-- Project information -->
+                <div class="space-y-4 p-6">
+
+                    <h3 class="text-2xl font-bold text-white">
+                        ALPHE GIST
+                    </h3>
+
+                    <p class="text-sm leading-7 text-slate-300">
+                        An AI-assisted blog project created to share clear,
+                        useful, and engaging content while demonstrating
+                        digital writing, research, and content development
+                        skills.
+                    </p>
+
+
+                    <!-- Technologies and skills -->
+                    <div class="flex flex-wrap gap-2">
+
+                        <span
+                            class="rounded-full bg-cyan-500/20 px-3 py-1 text-xs font-medium text-cyan-300"
+                        >
+                            AI Writing
+                        </span>
+
+                        <span
+                            class="rounded-full bg-cyan-500/20 px-3 py-1 text-xs font-medium text-cyan-300"
+                        >
+                            Research
+                        </span>
+
+                        <span
+                            class="rounded-full bg-cyan-500/20 px-3 py-1 text-xs font-medium text-cyan-300"
+                        >
+                            Content Creation
+                        </span>
+
+                    </div>
+
+
+                        <!-- Project action buttons -->
+                <div class="flex gap-3 pt-2">
+
+                    <!-- Watch Demo -->
+                    <button
+                        type="button"
+                        id="blog-video-btn"
+                        class="flex-1 rounded-xl bg-cyan-400 px-4 py-3 font-semibold text-slate-900 transition hover:bg-cyan-300"
+                    >
+                        <i class="fa-solid fa-circle-play mr-2"></i>
+                        Watch Demo
+                    </button>
+
+                    <!-- Visit Blog -->
+                    <a
+                        href="https://alpheusnwani.github.io/alphe-gist/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="flex-1 rounded-xl border border-cyan-400 px-4 py-3 text-center font-semibold text-cyan-300 transition hover:bg-cyan-400 hover:text-slate-900"
+                    >
+                        <i class="fa-solid fa-newspaper mr-2"></i>
+                        Visit Blog
+                    </a>
+
+                </div>
+                </div>
+
+            </article>
+
+                 <!-- ==================== CARD 4: AI DOCUMENT TRANSLATION ==================== -->
+
+<article
+    class="overflow-hidden rounded-3xl border border-slate-700/40 bg-white/5 backdrop-blur-lg transition duration-300 hover:-translate-y-2 hover:border-cyan-400/40"
+>
+
+    <!-- Project image -->
+    <div class="relative h-56 overflow-hidden">
+
+        <img
+            src="./assets/images/ai-translation.png"
+            alt="AI-Powered Document Translation project preview"
+            class="h-full w-full object-cover transition duration-500 hover:scale-110"
+        >
+
+        <!-- Project video play button -->
+        <button
+            type="button"
+            class="project-play-button absolute inset-0 m-auto flex h-14 w-14 items-center justify-center rounded-full bg-cyan-400 text-xl text-slate-950 shadow-lg transition hover:scale-110"
+            data-project="translation"
+            aria-label="Play AI-Powered Document Translation project video"
+        >
+            <i class="fa-solid fa-play"></i>
+        </button>
+
+    </div>
+
+    <!-- Project information -->
+    <div class="space-y-4 p-6">
+
+        <h3 class="text-2xl font-bold text-white">
+            AI-Powered Document Translation
+        </h3>
+
+        <p class="text-sm leading-7 text-slate-300">
+            Translated an English travel guide into French and German using AI-assisted prompt engineering while preserving the document's meaning, structure and readability. This project demonstrates multilingual document translation using Artificial Intelligence.
+        </p>
+
+        <!-- Technologies -->
+        <div class="flex flex-wrap gap-2">
+
+            <span class="rounded-full bg-cyan-500/20 px-3 py-1 text-xs font-medium text-cyan-300">
+                ChatGPT
+            </span>
+
+            <span class="rounded-full bg-cyan-500/20 px-3 py-1 text-xs font-medium text-cyan-300">
+                AI Translation
+            </span>
+
+            <span class="rounded-full bg-cyan-500/20 px-3 py-1 text-xs font-medium text-cyan-300">
+                Prompt Engineering
+            </span>
+
+        </div>
+
+           <!-- Project action buttons -->
+              <div class="flex gap-3 pt-2">
+
+                  <!-- Watch Demo -->
+                  <button
+                      type="button"
+                      id="translation-video-btn"
+                      class="flex-1 rounded-xl bg-cyan-400 px-4 py-3 font-semibold text-slate-900 transition hover:bg-cyan-300"
+                  >
+                      <i class="fa-solid fa-circle-play mr-2"></i>
+                      Watch Demo
+                  </button>
+
+                  <!-- Source Code -->
+                  <a
+                      href="https://github.com/alpheusnwani/ai-translation-project"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="flex-1 rounded-xl border border-cyan-400 px-4 py-3 text-center font-semibold text-cyan-300 transition hover:bg-cyan-400 hover:text-slate-900"
+                  >
+                      <i class="fa-brands fa-github mr-2"></i>
+                      Source Code
+                  </a>
+
+              </div>
+    </div>
+
+</article>
+
+
+<!-- ==================== CARD 5: AI-POWERED SENTIMENT ANALYSIS ==================== -->
+
+<article
+    class="overflow-hidden rounded-3xl border border-slate-700/40 bg-white/5 backdrop-blur-lg transition duration-300 hover:-translate-y-2 hover:border-cyan-400/40"
+>
+
+    <!-- Project image -->
+    <div class="relative h-56 overflow-hidden">
+
+        <img
+            src="./assets/images/mega-chicken.png"
+            alt="AI-Powered Mega Chicken Sentiment Analysis project preview"
+            class="h-full w-full object-cover transition duration-500 hover:scale-110"
+        >
+
+        <!-- Project video play button -->
+        <button
+            type="button"
+            class="project-play-button absolute inset-0 m-auto flex h-14 w-14 items-center justify-center rounded-full bg-cyan-400 text-xl text-slate-950 shadow-lg transition hover:scale-110"
+            data-project="sentiment"
+            aria-label="Play AI-Powered Sentiment Analysis project video"
+        >
+            <i class="fa-solid fa-play"></i>
+        </button>
+
+    </div>
+
+    <!-- Project information -->
+    <div class="space-y-4 p-6">
+
+        <h3 class="text-2xl font-bold text-white">
+            AI-Powered Sentiment Analysis
+        </h3>
+
+        <p class="text-sm leading-7 text-slate-300">
+            Analysed 144 Mega Chicken customer comments collected from multiple
+            online platforms to identify sentiments, emotions, brand perception,
+            recurring customer concerns, emerging trends and actionable business
+            insights using Artificial Intelligence.
+        </p>
+
+        <!-- Technologies and skills -->
+        <div class="flex flex-wrap gap-2">
+
+            <span
+                class="rounded-full bg-cyan-500/20 px-3 py-1 text-xs font-medium text-cyan-300"
+            >
+                ChatGPT • Claude • Gemini • Grok • DeepSeek
+            </span>
+
+            <span
+                class="rounded-full bg-cyan-500/20 px-3 py-1 text-xs font-medium text-cyan-300"
+            >
+                Sentiment Analysis
+            </span>
+
+            <span
+                class="rounded-full bg-cyan-500/20 px-3 py-1 text-xs font-medium text-cyan-300"
+            >
+                NLP
+            </span>
+
+            <span
+                class="rounded-full bg-cyan-500/20 px-3 py-1 text-xs font-medium text-cyan-300"
+            >
+                Prompt Engineering
+            </span>
+
+        </div>
+
+        <!-- Project action buttons -->
+            <div class="flex gap-3 pt-2">
+
+                <!-- Watch Demo -->
+                <button
+                    type="button"
+                    id="sentiment-video-btn"
+                    class="flex-1 rounded-xl bg-cyan-400 px-4 py-3 font-semibold text-slate-900 transition hover:bg-cyan-300"
+                >
+                    <i class="fa-solid fa-circle-play mr-2"></i>
+                    Watch Demo
+                </button>
+
+                <!-- Source Code -->
+                <a
+                    href="https://github.com/AlpheusNwani/ai-powered-mega-chicken-sentiment-analysis"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="flex-1 rounded-xl border border-cyan-400 px-4 py-3 text-center font-semibold text-cyan-300 transition hover:bg-cyan-400 hover:text-slate-900"
+                >
+                    <i class="fa-brands fa-github mr-2"></i>
+                    Source Code
+                </a>
+
+            </div>
+    </div>
+
+</article>
+
+        </div>
+        <!-- End of AI projects grid -->
+
+
+        <!-- ==================== FULL-STACK PROJECTS ==================== -->
+
+        <div class="mb-8 mt-20 flex items-center gap-4">
+
+            <div class="h-px flex-1 bg-slate-700/60"></div>
+
+            <h3
+                class="flex items-center gap-3 text-2xl font-bold text-purple-400 md:text-3xl"
+            >
+                <i class="fa-solid fa-code"></i>
+                Frontend Development
+            </h3>
+
+            <div class="h-px flex-1 bg-slate-700/60"></div>
+
+        </div>
+
+
+        <!-- Full-Stack project cards grid -->
+        <div class="grid gap-7 md:grid-cols-2 xl:grid-cols-3">
+
+
+    <!-- ==================== CARD 6: NEXUS LANDING PAGE ==================== -->
+
+<article
+    class="overflow-hidden rounded-3xl border border-slate-700/40 bg-white/5 backdrop-blur-lg transition duration-300 hover:-translate-y-2 hover:border-cyan-400/40"
+>
+
+    <!-- Project image -->
+    <div class="relative h-56 overflow-hidden">
+
+        <img
+            src="./assets/images/nexus-landing-page.png"
+            alt="Nexus Landing Page project preview"
+            class="h-full w-full object-cover transition duration-500 hover:scale-110"
+        >
+
+        <!-- Project video play button -->
+        <button
+            type="button"
+            class="project-play-button absolute inset-0 m-auto flex h-14 w-14 items-center justify-center rounded-full bg-cyan-400 text-xl text-slate-950 shadow-lg transition hover:scale-110"
+            data-project="nexus"
+            aria-label="Play Nexus Landing Page project video"
+        >
+            <i class="fa-solid fa-play"></i>
+        </button>
+
+    </div>
+
+    <!-- Project information -->
+    <div class="space-y-4 p-6">
+
+        <h3 class="text-2xl font-bold text-white">
+            Nexus Landing Page
+        </h3>
+
+        <p class="text-sm leading-7 text-slate-300">
+            A modern, fully responsive landing page designed and developed
+            manually using HTML, Tailwind CSS and JavaScript. The project
+            showcases clean UI design, reusable components, responsive layouts
+            and a mobile-first development approach.
+        </p>
+
+        <!-- Technologies -->
+        <div class="flex flex-wrap gap-2">
+
+            <span
+                class="rounded-full bg-cyan-500/20 px-3 py-1 text-xs font-medium text-cyan-300"
+            >
+                HTML5
+            </span>
+
+            <span
+                class="rounded-full bg-cyan-500/20 px-3 py-1 text-xs font-medium text-cyan-300"
+            >
+                Tailwind CSS
+            </span>
+
+            <span
+                class="rounded-full bg-cyan-500/20 px-3 py-1 text-xs font-medium text-cyan-300"
+            >
+                Responsive Design
+            </span>
+
+            <span
+                class="rounded-full bg-cyan-500/20 px-3 py-1 text-xs font-medium text-cyan-300"
+            >
+                Mobile First
+            </span>
+
+        </div>
+
+        <!-- Buttons -->
+<div class="flex gap-3 pt-2">
+
+    <!-- Watch Demo -->
+    <button
+        type="button"
+        id="nexus-video-btn"
+        class="flex-1 rounded-xl bg-cyan-400 px-4 py-3 font-semibold text-slate-900 transition hover:bg-cyan-300"
+    >
+        <i class="fa-solid fa-circle-play mr-2"></i>
+        Watch Demo
+    </button>
+
+    <!-- View Live Site -->
+    <a
+        href="https://alpheusnwani.github.io/nexus_landing_page/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="flex-1 rounded-xl border border-cyan-400 px-4 py-3 text-center font-semibold text-cyan-300 transition hover:bg-cyan-400 hover:text-slate-900"
+    >
+        <i class="fa-solid fa-globe mr-2"></i>
+        View Live Site
+    </a>
+
+</div>
+
+<!-- Source Code -->
+<a
+    href="https://github.com/AlpheusNwani/nexus_landing_page"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="inline-flex items-center gap-2 text-sm font-semibold text-slate-400 transition hover:text-cyan-300"
+>
+    <i class="fa-brands fa-github"></i>
+    Source Code
+</a>
+    </div>
+
+</article>
+
+
+            
+        <!-- ==================== CARD 7: TRAVEL AGENCY WEBSITE ==================== -->
+
+<article
+    class="overflow-hidden rounded-3xl border border-slate-700/40 bg-white/5 backdrop-blur-lg transition duration-300 hover:-translate-y-2 hover:border-cyan-400/40"
+>
+
+    <!-- Project image -->
+    <div class="relative h-56 overflow-hidden">
+
+        <img
+            src="./assets/images/travel-agency-website.png"
+            alt="Travel Agency Website project preview"
+            class="h-full w-full object-cover transition duration-500 hover:scale-110"
+        >
+
+        <!-- Play button -->
+        <button
+            type="button"
+            class="project-play-button absolute inset-0 m-auto flex h-14 w-14 items-center justify-center rounded-full bg-cyan-400 text-xl text-slate-950 shadow-lg transition hover:scale-110"
+            data-project="travel-agency"
+            aria-label="Play Travel Agency Website demo"
+        >
+            <i class="fa-solid fa-play"></i>
+        </button>
+
+    </div>
+
+    <!-- Project information -->
+    <div class="space-y-4 p-6">
+
+        <h3 class="text-2xl font-bold text-white">
+            Travel Agency Website
+        </h3>
+
+        <p class="text-sm leading-7 text-slate-300">
+            A modern and fully responsive travel agency website developed using
+            HTML5 and CSS3. The project showcases clean layouts, attractive
+            destination sections, responsive design principles and an engaging
+            user interface.
+        </p>
+
+        <!-- Technologies -->
+        <div class="flex flex-wrap gap-2">
+
+            <span class="rounded-full bg-cyan-500/20 px-3 py-1 text-xs font-medium text-cyan-300">
+                HTML5
+            </span>
+
+            <span class="rounded-full bg-cyan-500/20 px-3 py-1 text-xs font-medium text-cyan-300">
+                CSS3
+            </span>
+
+            <span class="rounded-full bg-cyan-500/20 px-3 py-1 text-xs font-medium text-cyan-300">
+                Responsive Layout
+            </span>
+
+            <span class="rounded-full bg-cyan-500/20 px-3 py-1 text-xs font-medium text-cyan-300">
+                UI Design
+            </span>
+
+        </div>
+
+        <!-- Buttons -->
+<div class="flex gap-3 pt-2">
+
+    <!-- Watch Demo -->
+    <button
+        type="button"
+        id="travel-agency-video-btn"
+        class="flex-1 rounded-xl bg-cyan-400 px-4 py-3 font-semibold text-slate-900 transition hover:bg-cyan-300"
+    >
+        <i class="fa-solid fa-circle-play mr-2"></i>
+        Watch Demo
+    </button>
+
+    <!-- View Live Site -->
+    <a
+        href="https://alpheusnwani.github.io/Travel-Agency-Website/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="flex-1 rounded-xl border border-cyan-400 px-4 py-3 text-center font-semibold text-cyan-300 transition hover:bg-cyan-400 hover:text-slate-900"
+    >
+        <i class="fa-solid fa-globe mr-2"></i>
+        View Live Site
+    </a>
+
+</div>
+
+<!-- Source Code -->
+<a
+    href="https://github.com/AlpheusNwani/Travel-Agency-Website"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="inline-flex items-center gap-2 text-sm font-semibold text-slate-400 transition hover:text-cyan-300"
+>
+    <i class="fa-brands fa-github"></i>
+    Source Code
+</a>
+
+    </div>
+
+</article>
+        </div>
+        <!-- End of Full-Stack projects grid -->
+
+    </div>
+    <!-- End of main projects container -->
+
+</section>
+
+<!-- ==================== END OF PROJECTS SECTION ==================== -->
+
+<!-- Reusable Project Video Modal Overlay -->
+<div
+    id="video-modal"
+    class="fixed inset-0 z-50 hidden items-center justify-center bg-slate-950/90 p-4 opacity-0 transition-opacity duration-300"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="video-modal-title"
+    aria-describedby="video-modal-description"
+>
+    <!-- Video Modal Content Box -->
+    <div
+        class="relative w-full max-w-4xl overflow-hidden rounded-3xl border border-slate-700 bg-slate-900 shadow-2xl"
+    >
+        <!-- Close Modal Button -->
+        <button
+            type="button"
+            id="close-video-modal"
+            class="absolute right-4 top-4 z-10 flex h-11 w-11 items-center justify-center rounded-full bg-slate-950/80 text-xl text-white transition hover:bg-cyan-400 hover:text-slate-950"
+            aria-label="Close project video"
+        >
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <!-- Dynamic Project Video Information -->
+        <div class="border-b border-slate-700 px-6 py-5 pr-20">
+            <h3
+                id="video-modal-title"
+                class="text-2xl font-bold text-white"
+            >
+                Project Demo
+            </h3>
+
+            <p
+                id="video-modal-description"
+                class="mt-2 text-sm text-slate-400"
+            >
+                Watch a short demonstration of this project.
+            </p>
+        </div>
+
+        <!-- Reusable Project Video Player -->
+        <div class="bg-black p-3 sm:p-5">
+            <video
+                id="project-video"
+                class="aspect-video w-full rounded-2xl bg-black"
+                controls
+                preload="metadata"
+                playsinline
+            >
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+</div>
+
+<!-- ==================== CONTACT SECTION ==================== -->
+
+<section
+    id="contact"
+    class="relative overflow-hidden border-t border-slate-800 bg-slate-950 py-24"
+>
+    <!-- Decorative background glows -->
+    <div
+        class="pointer-events-none absolute -left-24 top-20 h-72 w-72 rounded-full bg-cyan-400/10 blur-3xl"
+    ></div>
+
+    <div
+        class="pointer-events-none absolute -right-24 bottom-10 h-72 w-72 rounded-full bg-blue-500/10 blur-3xl"
+    ></div>
+
+    <div class="relative mx-auto max-w-7xl px-6">
+
+        <!-- Section heading -->
+        <div class="mx-auto max-w-3xl text-center">
+
+            <span
+                class="inline-flex items-center gap-2 rounded-full border border-cyan-400/30 bg-cyan-400/10 px-4 py-2 text-sm font-semibold text-cyan-300"
+            >
+                <i class="fa-solid fa-paper-plane"></i>
+                Contact Me
+            </span>
+
+            <h2
+                class="mt-6 text-4xl font-black leading-tight text-white md:text-5xl"
+            >
+                Let’s Build Something
+                <span class="text-cyan-400">
+                    Meaningful
+                </span>
+            </h2>
+
+            <p
+                class="mx-auto mt-5 max-w-2xl leading-8 text-slate-400"
+            >
+                I am open to frontend development opportunities, AI-related
+                projects, collaborations, internships and freelance work.
+                Send me a message and I will respond as soon as possible.
+            </p>
+
+        </div>
+
+        <!-- Contact content -->
+        <div class="mt-16 grid items-stretch gap-8 lg:grid-cols-2">
+
+            <!-- ==================== CONTACT INFORMATION ==================== -->
+
+            <div
+                class="flex h-full flex-col rounded-3xl border border-slate-700/50 bg-slate-900/80 p-7 backdrop-blur-lg transition duration-300 hover:-translate-y-1 hover:border-cyan-400/40 md:p-9"
+            >
+
+                <div>
+
+                    <span
+                        class="grid h-14 w-14 place-items-center rounded-2xl bg-cyan-400/10 text-2xl text-cyan-400"
+                    >
+                        <i class="fa-solid fa-address-card"></i>
+                    </span>
+
+                    <h3 class="mt-6 text-2xl font-bold text-white">
+                        Let’s Connect
+                    </h3>
+
+                    <p class="mt-4 leading-8 text-slate-400">
+                        Feel free to contact me through email or connect with
+                        me on any of the professional platforms below.
+                    </p>
+
+                </div>
+
+                <!-- Contact details -->
+                <div class="mt-8 space-y-4">
+
+                    <!-- Email -->
+                    <a
+                        href="mailto:Chuksnwani3@gmail.com"
+                        class="group flex items-center gap-4 rounded-2xl border border-slate-700 bg-slate-950/70 p-4 transition duration-300 hover:border-cyan-400/50 hover:bg-slate-950"
+                    >
+                        <span
+                            class="grid h-12 w-12 flex-shrink-0 place-items-center rounded-xl bg-cyan-400/10 text-lg text-cyan-400 transition duration-300 group-hover:bg-cyan-400 group-hover:text-slate-950"
+                        >
+                            <i class="fa-solid fa-envelope"></i>
+                        </span>
+
+                        <span class="min-w-0">
+
+                            <span class="block text-sm text-slate-500">
+                                Email Address
+                            </span>
+
+                            <span
+                                class="block break-all font-semibold text-white"
+                            >
+                                Chuksnwani3@gmail.com
+                            </span>
+
+                        </span>
+                    </a>
+
+                    <!-- Location -->
+                    <div
+                        class="flex items-center gap-4 rounded-2xl border border-slate-700 bg-slate-950/70 p-4"
+                    >
+                        <span
+                            class="grid h-12 w-12 flex-shrink-0 place-items-center rounded-xl bg-cyan-400/10 text-lg text-cyan-400"
+                        >
+                            <i class="fa-solid fa-location-dot"></i>
+                        </span>
+
+                        <span>
+
+                            <span class="block text-sm text-slate-500">
+                                Location
+                            </span>
+
+                            <span class="font-semibold text-white">
+                                Enugu, Nigeria
+                            </span>
+
+                        </span>
+                    </div>
+
+                </div>
+
+                <!-- Social links -->
+                <div class="mt-8">
+
+                    <h4 class="font-semibold text-white">
+                        Find Me Online
+                    </h4>
+
+                    <div class="mt-4 flex flex-wrap gap-3">
+
+                        <!-- GitHub -->
+                        <a
+                            href="https://github.com/AlpheusNwani"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Visit my GitHub profile"
+                            class="grid h-12 w-12 place-items-center rounded-xl border border-slate-700 bg-slate-950 text-lg text-slate-300 transition duration-300 hover:-translate-y-1 hover:border-cyan-400 hover:bg-cyan-400 hover:text-slate-950"
+                        >
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+
+                        <!-- LinkedIn -->
+                        <a
+                            href="https://www.linkedin.com/in/alpheus-nwani/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Visit my LinkedIn profile"
+                            class="grid h-12 w-12 place-items-center rounded-xl border border-slate-700 bg-slate-950 text-lg text-slate-300 transition duration-300 hover:-translate-y-1 hover:border-cyan-400 hover:bg-cyan-400 hover:text-slate-950"
+                        >
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+
+                        <!-- X -->
+                        <a
+                            href="https://x.com/chuksnwani3"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Visit my X profile"
+                            class="grid h-12 w-12 place-items-center rounded-xl border border-slate-700 bg-slate-950 text-lg text-slate-300 transition duration-300 hover:-translate-y-1 hover:border-cyan-400 hover:bg-cyan-400 hover:text-slate-950"
+                        >
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+
+                         <!--Email-->
+                        <a
+                  href="mailto:Chuksnwani3@gmail.com"
+                  aria-label="Send me an email"
+                  class="grid h-12 w-12 place-items-center rounded-xl border border-slate-700 bg-slate-950 text-lg text-slate-300 transition duration-300 hover:-translate-y-1 hover:border-cyan-400 hover:bg-cyan-400 hover:text-slate-950"
+              >
+                  <i class="fa-solid fa-envelope"></i>
+              </a>
+
+                    </div>
+
+                </div>
+
+                <!-- Availability -->
+                <div class="mt-auto pt-8">
+
+                    <div
+                        class="rounded-2xl border border-emerald-400/20 bg-emerald-400/10 p-5"
+                    >
+                        <div class="flex items-start gap-4">
+
+                            <span
+                                class="grid h-10 w-10 flex-shrink-0 place-items-center rounded-full bg-emerald-400/10 text-emerald-400"
+                            >
+                                <i class="fa-solid fa-circle-check"></i>
+                            </span>
+
+                            <div>
+
+                                <h4 class="font-semibold text-emerald-300">
+                                    Currently Available
+                                </h4>
+
+                                <p
+                                    class="mt-2 text-sm leading-7 text-slate-400"
+                                >
+                                    Open to frontend development, AI projects,
+                                    internships, remote roles and freelance
+                                    opportunities.
+                                </p>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- ==================== CONTACT FORM ==================== -->
+
+            <div
+                class="h-full rounded-3xl border border-slate-700/50 bg-slate-900/80 p-7 backdrop-blur-lg transition duration-300 hover:-translate-y-1 hover:border-cyan-400/40 md:p-9"
+            >
+
+                <div class="flex items-center gap-4">
+
+                    <span
+                        class="grid h-14 w-14 flex-shrink-0 place-items-center rounded-2xl bg-cyan-400/10 text-2xl text-cyan-400"
+                    >
+                        <i class="fa-solid fa-message"></i>
+                    </span>
+
+                    <div>
+
+                        <h3 class="text-2xl font-bold text-white">
+                            Send a Message
+                        </h3>
+
+                        <p class="mt-1 text-sm text-slate-400">
+                            Let's discuss your next project or collaboration.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <form
+                    action="YOUR_FORMSPREE_ENDPOINT"
+                    method="POST"
+                    class="mt-8 space-y-5"
+                >
+
+                    <!-- Name -->
+                    <div>
+
+                        <label
+                            for="contact-name"
+                            class="mb-2 block text-sm font-semibold text-slate-300"
+                        >
+                            Full Name
+                        </label>
+
+                        <div class="relative">
+
+                            <i
+                                class="fa-solid fa-user absolute left-4 top-1/2 -translate-y-1/2 text-slate-500"
+                            ></i>
+
+                            <input
+                                id="contact-name"
+                                name="name"
+                                type="text"
+                                required
+                                placeholder="Enter your full name"
+                                class="w-full rounded-xl border border-slate-700 bg-slate-950 py-4 pl-11 pr-4 text-white outline-none transition placeholder:text-slate-600 focus:border-cyan-400"
+                            >
+
+                        </div>
+                    </div>
+
+                    <!-- Email -->
+                    <div>
+
+                        <label
+                            for="contact-email"
+                            class="mb-2 block text-sm font-semibold text-slate-300"
+                        >
+                            Email Address
+                        </label>
+
+                        <div class="relative">
+
+                            <i
+                                class="fa-solid fa-envelope absolute left-4 top-1/2 -translate-y-1/2 text-slate-500"
+                            ></i>
+
+                            <input
+                                id="contact-email"
+                                name="email"
+                                type="email"
+                                required
+                                placeholder="Enter your email address"
+                                class="w-full rounded-xl border border-slate-700 bg-slate-950 py-4 pl-11 pr-4 text-white outline-none transition placeholder:text-slate-600 focus:border-cyan-400"
+                            >
+
+                        </div>
+                    </div>
+
+                    <!-- Subject -->
+                    <div>
+
+                        <label
+                            for="contact-subject"
+                            class="mb-2 block text-sm font-semibold text-slate-300"
+                        >
+                            Subject
+                        </label>
+
+                        <div class="relative">
+
+                            <i
+                                class="fa-solid fa-pen absolute left-4 top-1/2 -translate-y-1/2 text-slate-500"
+                            ></i>
+
+                            <input
+                                id="contact-subject"
+                                name="subject"
+                                type="text"
+                                required
+                                placeholder="What is your message about?"
+                                class="w-full rounded-xl border border-slate-700 bg-slate-950 py-4 pl-11 pr-4 text-white outline-none transition placeholder:text-slate-600 focus:border-cyan-400"
+                            >
+
+                        </div>
+                    </div>
+
+                    <!-- Message -->
+                    <div>
+
+                        <label
+                            for="contact-message"
+                            class="mb-2 block text-sm font-semibold text-slate-300"
+                        >
+                            Message
+                        </label>
+
+                        <div class="relative">
+
+                            <i
+                                class="fa-solid fa-comment-dots absolute left-4 top-5 text-slate-500"
+                            ></i>
+
+                            <textarea
+                                id="contact-message"
+                                name="message"
+                                rows="6"
+                                required
+                                placeholder="Write your message here..."
+                                class="w-full resize-none rounded-xl border border-slate-700 bg-slate-950 py-4 pl-11 pr-4 text-white outline-none transition placeholder:text-slate-600 focus:border-cyan-400"
+                            ></textarea>
+
+                        </div>
+                    </div>
+
+                    <!-- Send button -->
+                    <button
+                        type="submit"
+                        class="group flex w-full items-center justify-center gap-3 rounded-xl bg-cyan-400 px-6 py-4 font-bold text-slate-950 shadow-lg shadow-cyan-500/20 transition duration-300 hover:bg-cyan-300"
+                    >
+                        <i
+                            class="fa-solid fa-paper-plane transition duration-300 group-hover:translate-x-1"
+                        ></i>
+
+                        Send Message
+                    </button>
+
+                    <p class="text-center text-xs text-slate-500">
+                        <i class="fa-solid fa-lock mr-1"></i>
+                        Your information will only be used to respond to your
+                        message.
+                    </p>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
 </main>
 
-<!-- ================= FOOTER ================= -->
+
+     <!-- ==================== FOOTER ==================== -->
+
 <footer
-  class="sticky bottom-0 bg-[#0b1f3a] text-white py-6 px-6 md:px-12 z-40"
+    class="border-t border-slate-800 bg-[#0b1f3a] py-8 text-white"
 >
-  <div
-    class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4"
-  >
 
-    <!-- LEFT -->
-    <div class="text-center md:text-left">
-      <h3 class="font-bold text-lg">
-        Alpheus Nwani
-      </h3>
+    <div
+        class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 px-6 text-center md:flex-row md:text-left"
+    >
 
-      <p class="text-sm text-gray-300">
-        Frontend Developer | AI Enthusiast | Prompt Engineer
-      </p>
+        <!-- Left -->
+        <div>
+
+            <h3 class="text-xl font-bold text-white">
+                Alpheus Nwani
+            </h3>
+
+            <p class="mt-2 text-sm text-slate-300">
+                Frontend Developer | AI Enthusiast | Prompt Engineer
+            </p>
+
+        </div>
+
+        <!-- Center -->
+        <div class="text-sm text-slate-400">
+
+            © 2026 Alpheus Nwani. All Rights Reserved.
+
+        </div>
+
+        <!-- Right -->
+        <div class="flex items-center gap-5">
+
+            <!-- LinkedIn -->
+            <a
+                href="https://www.linkedin.com/in/alpheus-nwani/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                class="text-xl text-slate-300 transition duration-300 hover:-translate-y-1 hover:text-cyan-400"
+            >
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+            <!-- GitHub -->
+            <a
+                href="https://github.com/AlpheusNwani"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+                class="text-xl text-slate-300 transition duration-300 hover:-translate-y-1 hover:text-cyan-400"
+            >
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <!-- X -->
+            <a
+                href="https://x.com/chuksnwani3"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="X"
+                class="text-xl text-slate-300 transition duration-300 hover:-translate-y-1 hover:text-cyan-400"
+            >
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+
+            <!-- Back to Top -->
+            <a
+                href="#home"
+                class="ml-2 inline-flex items-center gap-2 text-sm font-medium text-slate-300 transition duration-300 hover:text-cyan-400"
+            >
+                <i class="fa-solid fa-chevron-up"></i>
+                Back to Top
+            </a>
+
+        </div>
+
     </div>
 
-    <!-- CENTER -->
-    <div class="text-center text-sm text-gray-300">
-      © 2026 Alpheus Nwani. All Rights Reserved.
-    </div>
-
-    <!-- RIGHT -->
-    <div class="flex gap-5 text-xl">
-
-      <a
-        href="#"
-        class="hover:text-blue-300 transition duration-300"
-      >
-        <i class="fa-brands fa-linkedin"></i>
-      </a>
-
-      <a
-        href="#"
-        class="hover:text-blue-300 transition duration-300"
-      >
-        <i class="fa-brands fa-github"></i>
-      </a>
-
-      <a
-        href="#"
-        class="hover:text-blue-300 transition duration-300"
-      >
-        <i class="fa-brands fa-twitter"></i>
-      </a>
-
-
-      <a href="#home"
-         class="text-gray-500 hover:text-[#0b1f3a] transition">
-        Back to Top
-      </a>
-
-
-    </div>
-
-  </div>
 </footer>
-
 
 <!-- ================= JS ================= -->
 <script src="./js/script.js"></script>
