@@ -1,249 +1,278 @@
+ASSIGNMENT 2 – PERSONAL PORTFOLIO WEBSITE
 
-Assignment 2 - Personal Portfolio Site
+PROMPTS USED FOR THE DEVELOPMENT
+=====================================
+Prompt:1.1 Website Structure
+=====================================
 
-PROMPT 1  === Intro 
+Create a responsive personal portfolio website for me using HTML5, Tailwind CSS and JavaScript.
 
-Act as a senior front-end developer.
+The website should have the following sections:
 
-I am a beginner developer building a personal portfolio website. Generate a professional, responsive portfolio website using HTML, Tailwind CSS, and JavaScript.
+Navigation Bar
+Home/Hero
+About
+Skills
+Projects
+Contact
+Footer
 
-The website should include the following sections:
-1. Sticky navigation bar (menu bar)
-2. Hero section
-3. Projects section
-4. Footer section
+Use a dark navy/slate background with cyan accents. Make the website responsive on mobile, tablet and desktop. Add smooth scrolling, hover effects and Font Awesome icons where necessary.
 
-Requirements:
-- Fully responsive (mobile, tablet, desktop)
-- Clean modern UI design
-- Smooth scrolling navigation
-- Mobile hamburger menu for navigation
-- Professional color scheme (navy blue primary theme)
-- Well-structured and commented code
-- Use semantic HTML
+Keep the code properly structured and add comments to identify the major sections.
 
+NAVIGATION BAR
 
-PROMPT 2 === Navigation bar
+======================================
+Prompt:2.1 Portfolio Logo
+======================================
 
-Create a responsive navigation bar for a professional portfolio website using HTML, Tailwind CSS, and JavaScript.
+Create a simple text-based logo for my navigation bar using ALPHEUS NWANI.
 
-Requirements:
-- Height: 4.5rem
-- Width: 100%
-- Background color: Dark navy blue 
-- Position: Sticky at the top of the page
-- Z-index should keep it above all content
-- Include smooth transitions and modern styling
-- Fully responsive across desktop, tablet, and mobile devices
+Place it on the left side of the navbar and make sure it fits properly on both desktop and mobile screens.
+======================================
+Prompt:2.2 Navigation Links
+======================================
+Create the navigation links for my portfolio.
 
+Add:
 
-PROMPT 3 === Logo
+-Home
+-About
+-Skills
+-Projects
+-Contact
 
-Create a professional text-based logo using the name "ALPHEUS NWANI".
+Place the links on the right side of the navbar on desktop. Each link should scroll to the correct section when clicked.
 
-Requirements:
-- Place the logo on the top left side of the navigation bar
-- Add spacing between the logo and the screen edge
-- Use rounded corners
-- Use colors that complement the navy blue navigation bar
-- Modern and professional appearance
-- Logo should scale appropriately on mobile devices
+Add simple hover effects and enough spacing between the links.
+==================================
+Prompt:2.3 Contact Button
+=================================
 
+Add a Contact button to the desktop navigation bar.
 
-PROMPT 4 === Navigation link
-Create navigation links for the portfolio website.
+When clicked, it should take the visitor to the Contact section. Give the button a cyan background and add a suitable contact icon from font awesome cdn.
 
-Links:
-- Home
-- About
-- Skills
-- Projects
-- Prompts Used
-- Engineering Improvements
-- Contact
+======================================
+Prompt:2.4 Mobile Navigation
+======================================
 
-Requirements:
-- Position links on the right side of the navigation bar
-- Align links horizontally on desktop
-- Add modern hover effects
-- Enable smooth scrolling to each section
-- Use accessible and semantic HTML
-- Ensure proper spacing between links
+Make the navigation bar responsive on mobile.
 
+Hide the desktop navigation links on smaller screens and show a hamburger button instead.
 
-PROMPT 5 === Mobile Navigation
+When the hamburger button is clicked, display the navigation links vertically.
 
-Create a mobile-responsive navigation menu.
+Use JavaScript to open and close the menu. The menu should also close when a link is selected, when the user clicks outside the menu or presses the Escape key.
 
-Requirements:
-- Hide navigation links on screens smaller than 768px
-- Display a hamburger menu icon on mobile
-- Clicking the hamburger icon should toggle the menu
-- Menu items should appear in a vertical stack
-- Include smooth opening and closing animations
-- Ensure accessibility and keyboard navigation support
+HERO SECTION
+=====================================
+Prompt:3.1 Hero Section
+=====================================
 
+Create the Hero section of my portfolio and place it below the navigation bar.
 
-PROMPT 6 === Hero section
+Introduce me as Alpheus Nwani and display my professional areas as:
 
-Act as a senior front-end developer.
+Frontend Developer
+AI Enthusiast
+Prompt Engineer
 
-Create a professional hero section for a personal portfolio website using HTML, Tailwind CSS, and JavaScript.
+Add a short introduction about what I do and what I am currently learning.
 
-The hero section should be placed directly below a sticky navigation bar.
+Display my professional photograph and add two buttons:
 
-Design requirements:
-- Split layout: text content on the left, profile image on the right (desktop view)
-- On mobile, stack content vertically with image above or below text
-- Include a professional introduction with name: "Alpheus Nwani"
-- Add a short professional tagline: "Frontend Developer | AI Enthusiast | Prompt Engineer"
-- Add a short bio paragraph describing a beginner developer learning web development and AI tools
-- Include two call-to-action buttons:
-  1. "View Projects" (scrolls to projects section)
-  2. "Download CV" (links to a PDF file)
-- Use a professional navy blue and white color theme
-- Ensure full responsiveness across all screen sizes
-- Add smooth hover effects and transitions for buttons
-- Use semantic HTML and clean structure
-- Ensure the section is visually balanced and modern
+Download Resume
+Contact Me
 
+Also add icons linking to my:
 
-PROMPT 7 === About section
+GitHub
+LinkedIn
+X (Twitter)
 
-Act as a senior front-end developer.
+Make the section responsive and add simple background effects to improve the design.
 
-Create a professional About section for a personal portfolio website using HTML, Tailwind CSS, and JavaScript.
+ABOUT SECTION
+==============================
+Prompt:4.1 About Section
+=============================
 
-The About section should be placed directly below the Hero section.
+Create an About Me section below the Hero section.
 
-Requirements:
-- Include a section heading titled "About Me"
-- Create a two-column layout on desktop screens and a single-column layout on mobile devices
-- Display a profile image on one side and content on the other side
-- Introduce Alpheus Nwani as a beginner frontend developer and AI enthusiast
-- Highlight his passion for web development, prompt engineering, and continuous learning
-- Mention his interest in building user-friendly digital solutions and solving real-world problems through technology
-- Add a short personal statement that reflects growth, curiosity, and commitment to improving technical skills
-- Include three information cards showing:
-  - Location
-  - Area of Interest
-  - Current Learning Focus
-- Use a modern, clean, and professional design
-- Use the same navy blue and white color theme as the rest of the portfolio
-- Add subtle hover effects where appropriate
-- Ensure full responsiveness across mobile, tablet, and desktop devices
-- Use semantic HTML and accessible markup
-- Maintain proper spacing, typography, and visual hierarchy
+Add my professional photograph and a short introduction explaining my background, learning journey and interest in frontend development, artificial intelligence and prompt engineering.
 
+Also add three cards for:
 
-PROMPT === 8 Skills
+Practical Experience
+Professional Approach
+Continuous Learning
 
-Act as a senior front-end developer.
+Keep the information simple and make the section responsive.
 
-Create a professional Skills section for a personal portfolio website using HTML, Tailwind CSS, and JavaScript.
+SKILLS SECTION
+==================================
+Prompt:5.1 Skills Section
+==================================
+Create a Skills section showing the areas I have worked with and the areas I am currently learning.
 
-The Skills section should be placed directly below the About section.
+Create separate cards for:
 
-Requirements:
-- Include a section heading titled "Skills"
-- Add a short introductory paragraph describing the technologies and skills I am currently learning and working with
-- Display skills in visually appealing cards or tiles
-- Organize skills into categories such as:
-  - Frontend Development
-  - Programming Languages
-  - AI & Prompt Engineering
-  - Tools & Technologies
-- Include relevant skill names under each category
-- Use icons where appropriate
-- Add subtle hover effects on skill cards
-- Use a clean and modern design consistent with the rest of the portfolio
-- Maintain the navy blue and white color theme
-- Ensure full responsiveness across mobile, tablet, and desktop devices
-- Use semantic HTML and accessible markup
-- Maintain proper spacing, typography, and visual hierarchy
+Frontend Development
+JavaScript Programming
+AI & Prompt Engineering
+Data & Language Applications
+Machine Learning Fundamentals
+Software Documentation
 
-PROMPT 9 === Projects Section
+Add a short description and suitable icon to each card.
 
-Act as a senior front-end developer.
+=================================
+Prompt:5.2 Development Toolkit
+==================================
+Add a Development Toolkit to my Skills section showing some of the tools I use.
 
-Create a professional Projects section for a personal portfolio website using HTML, Tailwind CSS, and JavaScript.
+Include:
 
-The Projects section should be placed directly below the Skills section.
+Visual Studio Code
+Git
+GitHub
+Microsoft Word
+Microsoft Excel
+ChatGPT
+Claude
+Gemini
+Grok
+Kimi
+DeepSeek
 
-Requirements:
-- Include a section heading titled "Projects"
-- Add a short introductory paragraph describing the projects completed during the program
-- Display each project in its own responsive card
-- Each project card should contain:
-  - Project title
-  - Project objective (what problem the project set out to solve)
-  - Design approach
-  - Development approach
-  - Delivery outcome
-- Use a clean and modern card layout
-- Add subtle hover effects and shadows
-- Maintain consistency with the navy blue and white color theme
-- Ensure full responsiveness across mobile, tablet, and desktop devices
-- Use semantic HTML and accessible markup
-- Maintain proper spacing, typography, and visual hierarchy
+Display them neatly and make the layout responsive.
 
+PROJECTS SECTION
+=================================
+Prompt:6.1 Projects Layout
+=================================
+Create a Projects section for my portfolio and divide it into:
 
-PROMPT 10 === Contact Section
+AI Projects
+Frontend Development Projects
 
-Act as a senior front-end developer.
+Display each project inside a card.
 
-Create a professional Contact section for a personal portfolio website using HTML, Tailwind CSS, and JavaScript.
+Each card should contain:
 
-The Contact section should be placed above the footer and should follow a modern, clean, and responsive design consistent with a navy blue and white theme.
+Project image
+Project title
+Short description
+Technologies used
+Relevant project buttons
 
-Requirements:
+Use the same card style throughout the section and make the cards responsive.
+================================
+Prompt:6.2 AI Projects
+===============================
+Add the following projects under AI Projects:
 
-- Include a section heading titled "Contact Me"
-- Add a short professional description encouraging users to reach out for collaborations, opportunities, or inquiries
+Canada Travel Guide
+AI Podcast
+ALPHE GIST
+AI-Powered Document Translation
+AI-Powered Sentiment Analysis
 
-Layout:
-- Use a two-column layout on desktop and a single-column stacked layout on mobile
-- Left side should contain a contact form
-- Right side should contain contact information and social links
+Add the appropriate buttons to each project so visitors can access its demo or external resource.
 
-Contact Form:
-- Full Name input field
-- Email Address input field
-- Message textarea
-- A styled submit button
-- Add focus states, hover effects, and clean spacing for all form elements
-- Ensure the form is accessible and user-friendly
+Use links such as YouTube, blog, eBook and GitHub where they apply.
+=========================================
+Prompt:6.3 Frontend Development Projects
+=========================================
 
-Contact Information:
-- Display a professional email address
-- Include social media icons (LinkedIn, GitHub, Twitter)
-- Add hover effects on social icons
+Add the following projects under Frontend Development Projects:
 
-Design Requirements:
-- Use a modern UI with proper spacing, typography, and visual hierarchy
-- Ensure full responsiveness across mobile, tablet, and desktop devices
-- Use semantic HTML structure
-- Maintain consistency with the rest of the portfolio design system
-- Add subtle hover animations and transitions for interactive elements
+Nexus Landing Page
+Travel Agency Website
 
-PROMPT 11 === Footer Section
+For each project, add:
 
-Act as a senior front-end developer.
+Watch Demo
+View Live Site
+Source Code
 
-Create a professional sticky footer for a personal portfolio website using HTML, Tailwind CSS, and JavaScript.
+The live website and source code should open in a new browser tab.
+==================================
+Prompt:6.4 Project Video Modal
+==================================
+I want visitors to watch my project demo videos without leaving the portfolio.
 
-Requirements:
+Create one reusable video modal using HTML, Tailwind CSS and JavaScript.
 
-- The footer should remain sticky at the bottom of the page
-- Use the same navy blue theme as the navigation bar
-- Display the name "Alpheus Nwani"
-- Include a short professional statement
-- Display copyright information
-- Include social media icons for LinkedIn, GitHub, and Twitter
-- Add hover effects on social icons
-- Ensure full responsiveness across mobile, tablet, and desktop devices
-- Use semantic HTML and accessible markup
-- Maintain consistency with the overall portfolio design
-- Add appropriate spacing, typography, and visual hierarchy
+When a visitor clicks a project's Watch Demo button, open the modal and load the correct video for that project.
 
+The modal should contain:
+
+Project title
+Short description
+Video player
+Video controls
+Close button
+
+Stop the video when the modal is closed.
+
+Also allow the visitor to close the modal by clicking outside it or pressing the Escape key.
+
+CONTACT SECTION
+===========================================
+Prompt:7.1 Contact Information
+===========================================
+Create a Contact section where visitors can find my contact information and send me a message.
+
+Display:
+
+Email address
+Location
+GitHub
+LinkedIn
+X (Twitter)
+
+Also add an availability card showing that I am open to:
+
+Frontend Development
+AI Projects
+Internships
+Remote Opportunities
+Freelance Projects
+
+==================================
+Prompt:7.2 Contact Form
+===================================
+Add a contact form beside the contact information on desktop and stack them on smaller screens.
+
+The form should contain:
+
+Full Name
+Email Address
+Subject
+Message
+Send Message button
+
+Make the fields required where necessary and add a short privacy notice below the form.
+
+ FOOTER SECTION
+==============================
+Prompt:8.1 Footer
+==============================
+Create a footer for my portfolio.
+
+Display:
+
+Alpheus Nwani
+Professional title
+Copyright information
+LinkedIn
+GitHub
+X (Twitter)
+
+Also add a Back to Top button that takes the visitor smoothly back to the top of the website.
+
+Keep the footer consistent with the website colour scheme.
 

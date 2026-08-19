@@ -1,24 +1,26 @@
 @import "tailwindcss";
 
+/* ========================================
+   CUSTOM WEBSITE THEME
+======================================== */
+
+@theme {
+    --color-deep-blue: #0b1d35;
+}
+
+/* ========================================
+   GLOBAL STYLES
+======================================== */
+
 html {
-  scroll-padding-top: 110px;
+    scroll-padding-top: 110px;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+/* ========================================
+   MOBILE NAVIGATION
+======================================== */
 
 .mobile-link {
-    @apply block py-2 hover:text-blue-300 active:text-blue-400 transition-colors duration-200
-
+    @apply block py-2 hover:text-blue-300 active:text-blue-400 transition-colors duration-200;
 }
